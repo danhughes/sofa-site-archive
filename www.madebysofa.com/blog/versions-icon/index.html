@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - The Versions Icon</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../welcome-window/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Welcome Window</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Friday the 31<sup>st</sup> <em>of</em> July, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Crunchtime </span><a href="../crunchtime/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">The Versions Icon&nbsp;</h2>
+				<h3 class="author"><em>by</em> Hugo van Heuven</h3>
+				<p class="intro">Following in a stream of weekly blog posts, today&#39;s post is about the Versions icon. A simple event description about the creation of the Versions Icon and the thoughts behind it.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>This week I&rsquo;ve decided to take you through the development of the Versions icon. For those who need some indication of the work involved in creating an icon, you may get a feel for it. Although this was an in house project and we weren&#39;t bound by any deadlines, this article still illustrates the lengths we take to create a strong visual brand.</p>
+
+<p>Important to know is that, long ago, Versions had an other icon. It was designed by Jasper Hauser even before Sofa was founded. It wasn&#39;t until we told people about Versions at WWDC 2007 that people knew about its existence. We built a site for Versions sporting this early icon and revealed it at WWDC &#39;07. Lots of people commented on the fact that the icon was very similar to the <a href="http://www.9rules.com">9rules</a> logo, so we decided to change it.</p>
+
+<div class="align_full_width">
+	<img src="../../media/img/blog/versions_icon/old_site_header.png" width="930" height="327" alt="An image of the old Versions icon in the previous site design.">
+	<small>The old icon and it&#39;s use in the sites header graphic.</small>
+</div>
+
+<p>The old icon had all the characteristics a good icon should have. A strong and recognizable image that works at both big and small sizes and looks good in the Dock. More importantly, the concept was sound. Each leaf represented a different version of the main branch, a concept we wanted to preserve in the new icon.</p>
+
+<h2>Back to The Drawing Board</h2>
+<p>So, we set out on a quest to find a good replacement. Lots of ideas passed the review and we eventually settled on the idea of bonsai. The main reason for this was that the trunk, branches and leaves would still convey the concept of versioning, while  a tree would look great in the header graphics we made for the last website.</p>
+
+<p>The difficulty of a bonsai tree however was that it&#39;s not really easy to make in Photoshop and still give it that soft Mac feel. That&#39;s why we took the 3D approach. Basically, this allowed us to try and position the tree the way we felt it would work best. I built and messed around with the model for a week or so until I was satisfied.</p>
+
+<div class="align_image_left">
+	<img src="../../media/img/blog/versions_icon/bonsai_tree_progress.png" width="420" height="420" alt="An image of work in progress on the Versions icon, based on a bonsai tree concept.">
+	<small>A couple of screenshots of the working progress.</small>
+</div>
+<div class="align_image_right">
+	<img class="no_border" src="../../media/img/blog/versions_icon/bonsai_tree_final.png" width="420" height="420" alt="An image of a bonsai tree (final render)">
+	<small>The final render of a bonsai tree.</small>
+</div>
+
+<p>Usually at this point the rest of the icon is done in Photoshop, because it&#39;s easier to get that aqua-feel in Photoshop than 3D. However, the tree was so complex it would have been a very hard job to get everything right in Photoshop, so I continued to work on it in 3D. Basically texturing the model until it looked like what I wanted. First results were stunning.</p>
+
+<p><img src="../../media/img/blog/versions_icon/bonsai_tree_in_dock.png" width="195" height="285" alt="">Then we encountered a major problem. Whatever I did, the icon would not work on small sizes or in the Dock. The leaves got blurry when we scaled the image down and somehow the icon always felt small next to other icons in the Dock. This rendered the plan useless and 2 weeks of work went down the drain.</p>
+
+<p>So we were back to square one. Looking again at the old icon, I still admired the simple concept behind the leaves and thought that perhaps a flower could work. Flowers, or organic forms for that matter, are rarely seen in icons. I think because they&#39;re too complex. Still, I went ahead and searched for something suitable. I found a couple of pictures of a lotus flower and found that I could translate the concept perfectly to this image. The heart of the flower would be a repository and the leafs could be considered as branches and versions. With this in mind I created a couple of very simple models.</p> 
+
+<div class="align_full_width">
+	<img class="no_border_no_caption" src="../../media/img/blog/versions_icon/flower_models.png" width="930" height="160" alt="An image of quick 3D renders of lotus flowers.">
+</div>
+
+<p>Not wanting to repeat the same mistakes, I moved from 3D back to Photoshop as fast as I could. After a couple days, progress ground to a halt and I got a designers block. I could see the icon had potential, but it was far from being on the same level as our other icons. I didn&#39;t know what to do next.</p>
+
+<div class="align_image_right">
+	<img class="no_border" src="../../media/img/blog/versions_icon/flower_potential.png" width="420" height="185" alt="An image of the Versions icon close to final.">
+</div>
+
+<div class="align_image_left" style="margin-top:280px;">
+	<img class="no_border" src="../../media/img/blog/versions_icon/versions_icon.png" width="420" height="390" alt="An image of the Version icon.">
+</div>
+
+<p>Most of the times when you have such a block, it helps to have a fresh set of eyes to help you look. Jasper, who was already giving pointers and suggestions throughout the whole process, offered to take a shot at the icon. I happily sent him the PSD and waited while he went to work on it. A week later he came back with amazing results. The differences are subtle, but very important to make the icon &ldquo;sweet&rdquo;. One of the most important alterations can be found in the composition of the leafs. The composition is more open which gives more focus on the center of the icon and it enhances the overall recognizability of the shape. The transparency in the leafs suggest they are thin, but the icon still has a lot of body. Also, it contributes to the whole &ldquo;Aqua/Apple&rdquo; feel. The center was given a texture to make it more flower-like, instead of the weird marble which was in my design.</p>
+
+<p>Designing the final icon took about 2 weeks. The whole process from beginning to end, with all the ideas we had, took about 6 weeks of full-time work spread out over half a year. Too bad I was never able to use the bonsai for anything, hopefully I get to use it in some header graphic at some point.</p>
+
+<div class="button">
+	<a href="http://files.madebysofa.com/public/Versions512.png">Download the high resolution version</a>
+</div>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>The Versions Icon</span> written by <a href="http://twitter.com/hugovanheuven" class="author">Hugo van Heuven</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/versions-icon/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/versions-icon/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/versions-icon/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

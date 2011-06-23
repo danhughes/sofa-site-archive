@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Stopped at Every Turn</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="http://www.madebysofa.com/media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="http://www.madebysofa.com/media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="http://www.madebysofa.com/media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="http://www.madebysofa.com/media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="http://www.madebysofa.com/media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="/">www.madebysofa.com</a>
+				<a class="blog" href="/blog">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../blog/sofa-icon"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Sofa Icon</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Friday the 3<sup>rd</sup> <em>of</em> July, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Writing for The Web </span><a href="../blog/writing-for-the-web">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Stopped at Every Turn&nbsp;</h2>
+				<h3 class="author"><em>by</em> Jonathan Dann</h3>
+				<p class="intro">The touch-screens at Gare du Nord don&#39;t like me, but for a long time my girlfriend didn&#39;t know what I was complaining about. It took me a while to work out why: parallax.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>I was recently speaking with <a href="http://twitter.com/koenbok">@koenbok</a> about the possibility of redesigning something that we use every day but could be infinitely better. I came up with 2 major contenders: the cash-point (I&#39;m English, ATM for those or you across the Pond) and the train-ticket machine. The train-ticket machine is the one which appears to vary most wildly, and the ones I&#39;ve had the pleasure of using end up being the most temperamental.</p>
+
+<p>I frequently take trains from both Amsterdam to Paris and Paris to London. Surprisingly, for each, I do the return journey exactly the same number of times. As a man of the 21st Century I book my tickets online and expect to be able to collect them at the station. In doing so, I&#39;ve found many stages in obtaining said tickets that are so common, we often don&#39;t even realise that there&#39;s a problem there.</p>
+
+<h2>Finding My Booking Reference</h2>
+<p>I&#39;m an iCal user. Calendaring is a pain on any platform, however the integration of iCal and my iPhone, and the CalDav standard means that I&#39;ve got a system that works. When I&#39;ve booked my tickets online I get an email with all the information about my travels, including the all-important reference number. The problem is I have to find the information amongst reams of text and misplaces images (some companies make this harder than others) and manually enter it into iCal. Depending on the email, Apple&#39;s Data Detectors help very little.</p>
+
+<p>So I arrive at the station and I need to enter my reference into the machine. The problem is I&#39;ve forgotten to enter my travel details into iCal. I have to go into Mail on my iPhone and hope that the email is still on the phone (I&#39;m cheap so I book my tickets way in advance). I&#39;ll concede that iPhone OS 3.0 has made this a whole lot less painful by allowing me to search for mail on the server, but signal can be a problem.</p>
+
+<p>The really simple solution is for each of these companies to generate an .ics file and attach it to the email. The reference itself can be placed into the "Notes" field, and even the time zone can be correctly set. If Mail doesn&#39;t add the event automatically to my calendar then at most I have one click.</p>
+
+<h2>Parallax</h2>
+<p>So I&#39;ve gone through the rigmarole of finding my reference and I need to enter it into the machine. The touch-screens at Gare du Nord don&#39;t like me, but for a long time my girlfriend didn&#39;t know what I was complaining about. It took me a while to work out why: parallax.</p>
+
+<p>I&#39;m not a tall man, but it seems that the person (I&#39;m not really sure why I ascribe this to a single individual, perhaps a faceless group is harder to direct my frustrations at) who designed these units was likely short. The first time I used the machine none of the buttons I pressed would respond to me. My initial thought was that I&#39;ve been spoiled by the iPhone&#39;s exquisitely-engineered input method, but this wasn&#39;t an entirely accurate assessment. It turns out that if I crouched such that the top of the screen was at eye-level (as all health and safety manuals will tell you is the optimal position when seated) the unit would respond properly. The angle of my finger hitting the screen had changed. As these screens are detecting your touches, they are calibrated to localise the touch along a line perpendicular to the plane of the display.</p>
+
+<p>Consider for a second that the finger is not a 2-dimensional mouse-pointer, it is a long 3-d pointing device. When humans point at anything in the real world, our eyes trace a line along our finger, perhaps even the arm depending on the distance, to the intended target. When using a mouse-pointer this alignment method is turned through 90-degrees and the target along the length of the pointer to a UI element in the same plane.</p>
+
+<p>When I attempt to hit a button one on of these screens my finger comes in directed from above, and is angled away from the normal to the screen. This causes the system to register a hit above the UI element; my touch isn&#39;t registered and I can&#39;t type correctly. Contrast this with the iPhone, which has been designed to localise touches based on the assumption that it is held in one&#39;s hand at an angle. Touches generally impact the screen with your finger angled less than 90-degrees to the plane of the screen, directed from below. To experience the problem lay the phone flat on a table, turn it with the home button facing away from you and try typing. It&#39;s not bad, but its certainly not as responsive as it normally is.</p>
+
+<p>I envisage a terminal that uses cameras to determine the angle of incidence of the user&#39;s finger, allowing the software to continually re-calibrate its method of touch localisation. An even simpler solution is to design a UI such that each of the controls has hit area larger than their graphical representations, giving user some leniency. Humans are fallible, and as software developers we should account for that.</p>
+
+<h2>Keyboards</h2>
+<p>This is a pretty simple gripe, but still one that gets me every time when I travel in the UK. When entering a reference, or a booking reference, many of the ticket machines don&#39;t have a QWERTY keyboard. The stupidity of this truly fascinates me. The assumption is that by arranging the keyboard UI in alphabetical order, it will be easy-to-use for all people, even those who aren&#39;t computer-literate (I&#39;m sure the discussion of such features focusses on the elderly). Bravo to those who identify that ease-of-use should be of primary concern, but the solution is completely backwards. Nearly all of us, including my grandmother (who is a far superior typist to me) have grown up with a QWERTY keyboard (AZERTY for those Francophones amongst us), it actually pre-dates the computer. I spend a surprising amount of my time trying to find letters on these alphanumeric keyboards, and I&#39;m not the only one. When I select the language of the UI, the unit should present me with a suitable keyboard.</p>
+
+<h2>Where do I have to go?</h2>
+<p>The final feature I&#39;d love to see implemented on these units would undoubtedly give them a more "humane" interface. After my tickets are printed, invariably the next thing I do is to find the departure boards and work out which platform its leaving from; if I&#39;m already late, this can mean the difference between seeing the train leave the platform and hopping on.</p>
+
+<p>As the machine is printing the tickets is should display on screen the platform the next two trains are leaving from and the time they&#39;re going. More importantly, the time of departure should read "In 5 minutes" rather than a time written as "17:56" which would require me to look at the clock and calculate the time difference.</p>
+
+<h2>Be Smarter</h2>
+<p>Every object you use in your daily life has been designed. Some with more care than others. A well-constructed interface should fade into the background as you attempt to complete a given task; it is in this that the majority of interfaces fail. At every stage of trying to catch my train I&#39;ve found a point where either the workflow can be improved, or where the interface causes me to stop and think about how to complete my task: developers can be smarter and use standards to provide me with important information, hardware can be smarter in how it responds to changing input scenarios, designers can be smarter in testing their assumptions and software can be smarter in how information is presented to me. I might use an analogy in which I describe a chain that, if broken at any stage, renders the object useless; in reality, I&#39;m trying to think of a material with small constituents which appears as a contiguous whole to our eyes: as a user I&#39;d like to see a workflow where stages blend into one single, seamless, experience.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Stopped at Every Turn</span> written by <a href="http://twitter.com/jonathandann" class="author">Jonathan Dann</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href=\"http://twitter.com/versionsapp/status/" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Ruby on OS X Talk</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="http://www.madebysofa.com/media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="http://www.madebysofa.com/media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="http://www.madebysofa.com/media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="http://www.madebysofa.com/media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="http://www.madebysofa.com/media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="/">www.madebysofa.com</a>
+				<a class="blog" href="/blog">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../blog/finding-my-phone"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Finding my Phone</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Monday the 18<sup>th</sup> <em>of</em> May, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Interning At Sofa </span><a href="../blog/interning-at-sofa">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Ruby on OS X Talk&nbsp;</h2>
+				<h3 class="author"><em>by</em> Koen Bok</h3>
+				<p class="intro">Last Friday I gave a talk at the Ruby on OSX event about our experiences writing Cocoa apps in an interpreted language.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>Objective-C is a great language, but lots of people are looking into building native Cocoa apps in the languages they know and love. Interesting technologies like MacRuby have emerged, with small but strong communities around them and it became time for someone to organize the first official event for this. <a href="http://twitter.com/thijs">Thijs van der Vossen</a> from <a href="http://www.fngtps.com/">Fingertips</a> did exactly that with the first MacRuby conference held in Amsterdam last friday. He asked me to talk a bit about our experiences shipping an application in an interpreted language, and designing Mac desktop applications.</p>
+
+<div class="button">
+	<a href="http://files.madebysofa.com/bingo/public/Sofa-Ruby-OSX-Slides.pdf">Download the slides</a>	
+</div>
+
+<h2>Presentation Transcript (Edited for the Web)</h2>
+<p>First some confessions. We&#39;re not a Ruby place at all. We build most of our stuff in either Python or C/C++/ObjC. And regarding myself, while I started out designing and developing, we now have way better developers and designers in our company than I was, and probably will ever be. So even though I will talk about programming, please keep in mind I&#39;m probably the least qualified person in this room to actually do so.</p>
+
+<p>So what to talk about then? I came up with two things&hellip;</p>
+
+<h2>Part One: Writing Cocoa Apps in an Interpreted Language</h2>
+<p>The first one has everything to do with Checkout. Checkout is our biggest application which is available in most Apple stores worldwide. It was built built entirely in Cocoa/Python using the PyObjC bridge. That makes it–to my best knowledge–the only commercial shipping app for the Mac that&#39;s written in an interpreted language. So I thought it might be interesting to share what we learned about that.</p>
+
+<h2>Legal &amp; Commercial Risks</h2>
+<p>Let&#39;s start with the most boring stuff, but most often asked. How do you protect your app if you ship it with source code? We all understand that it&#39;s way easier to reverse engineer an interpreted app than a compiled app. My advice here would be to not care about it on a technical level, but protect it through the law. It&#39;s easy to spend hours trying to obfuscate your code, but there is no way you can protect it from some smart evil dude that has his mind set on getting it. Instead, spend those hours studying what can be done legally if this happens, and make sure that you can act. To this day we have had no problems with this at all, but we sure know what to do when it happens.</p>
+
+<h2>Using the Non-Official Technology (Ruby over Objective-C)</h2>
+<p>Let&#39;s face it. You&#39;ll be a second class citizen on the Mac platform. Although Apple made promises otherwise and has some really smart people working on it (thanks <a href="http://chopine.be/lrz/">Laurent</a>!), it&#39;s hard to deny that more effort is spent on technologies Apple itself uses to build apps than on MacRuby/PyObjC. So building your app will make you dependent on the community you build around it and with a pretty niche combination of technologies like this, it can be pretty volunteer-dependent. So yeah, that&#39;s a risk. Fortunately Rubyists have built many of these communities that work perfectly well–even to the point that you could argue that it might work better than letting Apple handle it (ever filed a radar bug?).</p>
+
+<h2>What Can You Do Better Than Obj-C Coders</h2>
+<p>How many people here have built professional Ruby web apps already? I bet a huge group. That gives you quite an advantage over Cocoa programmers. I&#39;ll go over some examples.</p>
+
+<h4>Frameworks &amp; Libraries</h4>
+<p>Ruby has a ton of gems that do great stuff Cocoa can&#39;t yet. I mean CoreData is cool, but ActiveRecord lets you build networked SQL apps really easily (we do this in Checkout with <a href="http://www.sqlalchemy.org/">SQLAlchemy</a>). I can think of a ton of stuff that&#39;s so much easier to do with ready made gems like serialization, xml processing, mail processing, prediction algorithms, socket networking etc&hellip; But also, sometimes buggy Cocoa behaviour can be substituted easily with some Ruby solution that is tested and ready to drop in. We also experienced this a lot with Checkout (you damn NSNumberFormatter!)</p>
+
+<h4>Tools &amp; Tests</h4>
+<p>Xcode is great. You can use it, but sometimes it&#39;s better not to. There are tons of Ruby build tools out there that integrate with your favorite IDE. For example, we do automated builds of Checkout with a bunch of python scripts that put it on custom designed disk images and we love TextMate and Espresso for coding. Testing is also a lot easier than in Obj-C.  Languages like Ruby makes it easy to apply the agile test-driven development that we all like.</p>
+
+<h4>Skills</h4>
+<p>As web and Ruby programmers, you know lots about technologies like networking, persistent data, HTTP, SQL and REST. These aren&#39;t skills that a lot of programmers have, so leverage it for your app. Build a <a href="http://tokyocabinet.sourceforge.net/spex-en.html">Tokyo Tyrant</a> backed API to store data from your app online. Or deploy it on one of the many stacks available like <a href="http://heroku.com/">Heroku</a> and start selling subscriptions as an add-on to your app. Or build an app that locally shares data by using Bonjour and Memcache. That&#39;s everyday stuff for you guys, but seems like magic if applied to desktop apps.</p>
+
+<h2>Part Two: Building Desktop Apps</h2>
+<p>Having said all that, let&#39;s look from the other side. You guys are great at building webapps but you&#39;re moving into the Desktop space, which is quite different, especially on the Mac. Here are some pointers that might help.</p>
+
+<h2>A New Experience.</h2>
+<p>As with web apps it&#39;s all about the experience of using it. On the web you can have so much control over that experience, and in a way, that saves you a lot of time. On the desktop, people expect stuff like logical keyboard shortcuts, undo, copy and paste, drag and drop, multiple windows and falling asleep. If any of those things is not there, the experience will be bad regardless of the rest. So the bottom line is that you will have to spend a lot more time on stuff you probably never really had to think about.</p>
+
+<p>But with great control also comes great responsibility. If you are planning to go wild on your UI keep in mind that Mac UIs tend to look the same, within certain rules (for the basics check out <a href="http://developer.apple.com/documentation/userexperience/Conceptual/AppleHIGuidelines/index.html">Apple&#39;s HIG</a>). So before you use that font or start animating entire sets of windows, make sure you know how that will influence the user experience.</p>
+
+<p>Side-note: The Mac UI is always changing. Currently, the iPhone has a huge impact on how stuff starts to look on the desktop but interface designers try to use the stuff that makes sense on the desktop. For example, we&#39;re trying to redefine how desktop scrollbars should work because of that, but that&#39;s another story.</p>
+
+<h2>Snappyness</h2>
+<p>Interpreted languages are not as fast as C/ObjC. And that is almost never a problem. Still, I notice people are pretty sensitive about this and spend hours of coding to make that one routine 20% faster. But to the user, 20% faster slowness is still slow. Instead of engineering, focus on how it &lsquo;feels&rsquo; to the user. Show precise and fancy looking progress indicators, start displaying partial content if you can, or make your app in such a way that you can do other interesting stuff while it&#39;s crunching. For some good examples check out how iPhone apps like mail deal with this. They&#39;re slow, but still feel &lsquo;snappy&rsquo;.</p>
+
+<h2>Get Design</h2>
+<p>There is really no way around this. You might be really great at coloring squares with css and doing typography with 3 fonts on the web, but with more control come higher user expectations. This is especially true on the Mac platform, where there&rsquo;s a very distinct idea about what is done and not done regarding UI graphics and icons. The hard thing is nobody can actually express it, but everybody seems to recognize it. I guess it comes pretty close to art in that regard. A cool side effect is that when you get it right, you get a lot of free advertising from the community. People will try out your app and write about it even if they&rsquo;re not the target audience. True viral marketing through a good UI. So take a good honest look at your design skills and decide if you need to find someone to help you out there. We try telling everyone that it pays off to start with a full-time designer on board, but that&rsquo;s a little out of scope for this presentation. If you&rsquo;re building something really awesome, be sure to give us a call ;-)</p>
+
+<p>So I guess that&rsquo;s what I could tell in about ten minutes. I hope it&rsquo;s useful to some of you, and wish you lots of fun building Cocoa apps.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Ruby on OS X Talk</span> written by <a href="http://twitter.com/koenbok" class="author">Koen Bok</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href=\"http://twitter.com/versionsapp/status/" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

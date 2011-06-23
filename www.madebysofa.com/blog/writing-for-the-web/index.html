@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Writing for The Web</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../stopped-at-every-turn/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Stopped at Every Turn</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Tuesday the 14<sup>th</sup> <em>of</em> July, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Welcome Window </span><a href="../welcome-window/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Writing for The Web&nbsp;</h2>
+				<h3 class="author"><em>by</em> Jens Hollander</h3>
+				<p class="intro">Writing text for the web isn&#39;t that hard. Here are the 10 rules I follow to help me write clean, comprehensible text for the web.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>As a freelance writer I&#39;ve been helping Sofa create, design and restyle websites. Since I&#39;ve been spending so much time with them I thought it would be fun to add something to the Sofa blog.</p>
+
+<p>One of the most annoying things on the web are pages filled with text and different pages that require endless clicking, scanning and more clicking to find what you need. Text for the web should be clearly set out so the reader is able to scan through it quickly and easily. Just like the interface, it should be intuitive to find what you are looking within the text. To do this, I follow these 10 rules:</p>
+
+<h2>1. Know the Product you&#39;re Describing</h2>
+<p>&ldquo;The options are limitless.&rdquo; You find such phrases on many a webpage. I always get the feeling that the writer just doesn&#39;t know exactly what their product does and so they resort to hollow sentences like this. Before doing any work, describe for yourself in a few sentences what the product does. Don&#39;t talk about the competition or talk about things your program doesn&#39;t do. Just describe what it does, plain and simple.</p>
+
+<h2>2. What Problem Does It Solve</h2>
+<p>We buy new products or software because they fill needs we either have, or think we have. A good understanding of what need the product fills or which problem the product solves is the most vital aspect to writing good text for the web.</p>
+
+<h2>3. Break up All the Text</h2>
+<p>You know what the product is and what it does. Now write a list about all the things you want to tell about the product. What features do you want to highlight, what are the ways people can use the product? I begin by creating an outline of all these points. In the final text they will become small columns of text. It helps me while writing it and it will help the reader find what he or she is looking for when reading it. This is the setup I used in a recent project, an online web service:</p>
+
+<div class="list">
+	<ul>
+		<li>A short description of the product and the problem it solves.</li>
+		<li>A short, but more in-depth, look at the features of the product.</li>
+		<li>Special features that set it apart from the competition.</li>
+		<li>A bulleted list of other cool features.</li>
+		<li>The real world. Who would use the product, what benefit would they have?</li>
+		<li>How does it works with other programs? How can you export your data?</li>
+		<li>What does the company do to keep your online data safe?</li>
+		<li>What does the company do to safeguard your privacy?</li>
+	</ul>
+</div>
+
+<h2>4. Write a First Draft As Quickly As You Can</h2>
+<p>Now it&#39;s time to get the first draft done as quickly as you can. Don&#39;t worry about grammar, spelling or even making sense, there&#39;s plenty of time for that later on. Just get it out of your system.</p>
+
+<h2>5. Writing Is Rewriting</h2>
+<p>I know it&#39;s a cliche, but that&#39;s only because it&#39;s true. Rewriting is the only real thing that sets the professional apart from the amateur. A professional is simply an amateur who didn&#39;t give up. Most word processors can count words for you, use this feature to keep all of the columns roughly the same size. Expand or increase text where needed. When you&#39;re done, print out your text and read it, away from your screen. Make notes about anything that&#39;s wrong with it. Rewrite the text on your computer, print it out a second time and go over it in the same way. Repeat, go home for the night and repeat the following morning.</p>
+
+<h2>6. Love the Designers and They Just Might Love You Back</h2>
+<p>When you have something close to how you think it should be, talk to the person who is designing the page. At Sofa, I&#39;ve spent hours sitting besides Joy-Vincent talking about how to design the webpage. I told him how many columns I think I would need and what the subject was of each column. He told me what visual features he wanted to put in his design. Together we came up we a plan on how both our work would complement each other&#39;s.</p>
+
+<h2>7. Don&#39;t Do Your Own Proofreading</h2>
+<p>By this time, you&#39;ve gone over it so many times that your eyes glare over broken sentences and weird spelling. This would be a great time to let someone else read the text. Don&#39;t make your designer do this, you&#39;ve been a pain in his or her butt already. Find someone who isn&#39;t involved with the project. If they read it and don&#39;t understand it, you know you&#39;re not done.</p>
+
+<h2>8. Let the Client In</h2>
+<p>It&#39;s a hard thing to keep the client in the dark for so long, but now you really have something to show them. Let them read the text, ideally in a basic set-up of the website. If you give them your work in a text document it becomes clear just how few words go on a good website. A text written for the web only really works on the web. When talking to the client, have a pen and paper with you and write down all their remarks. If they come with something you don&#39;t agree with, write it down extra clearly. They probably know more about the product and their intended audience than you do. If you really don&#39;t agree with them, politely explain why you did what you did. Always be ready to change it. You can work on your own novel at night.</p>
+
+<h2>9. Did I Say Love Your Designer?</h2>
+<p>If the client is happy with the copy it&#39;s time for the designer to make up the final design. Try to be involved in this. Take a look at the work in progress, take out a few words here, add a few words there. If it makes the pages looks better it will make your text look better.</p>
+
+<h2>10. Know When to Quit</h2>
+<p>Reaching the end of a project always comes with some frantic late-night shifts to make the deadline. Avoid making drastic changes in this part of the process. You&#39;ve been staring at your own text for so long that you probably want to change it just to look at something fresh. Don&#39;t do this. This is the part where any mistake can have severe consequences. Just do as little as possible and enjoy seeing your original text come to life on a beautiful website.</p>
+
+<p>These are some of the rules I follow when writing web text, a craft which I&#39;m learning more about about each day. If you have any good tips, drop me a line at <a href="mailto:hollander@mac.com">hollander@mac.com</a>.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Writing for The Web</span> written by <a href="http://twitter.com/suspie" class="author">Jens Hollander</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/writing-for-the-web/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/writing-for-the-web/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/writing-for-the-web/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Double Rainbow</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../sofa-acquires-versions/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Sofa Acquires Versions</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Wednesday the 1<sup>st</sup> <em>of</em> December, 2010
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Sofa on the Mac App Store </span><a href="../mac-app-store/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Double Rainbow&nbsp;</h2>
+				<h3 class="author"><em>by</em> Jasper Hauser</h3>
+				<p class="intro">Today's releases: Versions 1.1 and Kaleidoscope 1.1. Both add new features and both are free updates for existing customers!</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<h2>Versions 1.1</h2>
+<p>When we acquired Versions last October, <a href="../sofa-acquires-versions/index.html">we said</a> we were committed to continue development for Versions. Today's release is the first shipping result of that. We've been slaving away on this release for a while and are very happy about how it turned out.</p>
+<p>Some new features in this release are: highly improved drag &amp; drop support, HTTP(S) proxy support, Growl notifications, to name a few. But more importantly, it also packs an extensive list of bug fixes, improvements, tweaks, and subtle redesigns that are all aimed at improving the overall stability, experience and workflow for people who use Versions on a daily basis.
+	<div class="align_image_left">
+		<img src="../../media/img/blog/versions-kaleidoscope/versions-kaleidoscope.jpg" width="440" height="234" alt="" style="border:none;">
+	</div>
+</p>
+
+<p>Make sure to <a href="http://www.versionsapp.com/releasenotes">stop by the release notes</a> to read up on the many things we have done to make this the best release of Versions yet.</p>
+<p>While you're at it, check out the redesigned <a href="http://versionsapp.com">Versions website</a> we made to accompany this significant release.</p>
+
+<h2>Kaleidoscope 1.1</h2>
+
+<p>After successfully <a href="../kaleidoscope/index.html">planting the seed</a> on June 1<sup>st</sup>, we needed some time to reflect. We knew what Kaleidoscope should be, simply and ambitiously said: the world's most advanced file comparison application. But we still had to learn what the rest of the world thought of it, and how they used it.</p>
+
+<p>Thankfully we got a lot of feedback. A huge chunk of it related to tighter integration in people's workflows. The 1.0 already shipped with easy to set up integration with pretty much every popular version control system. But we felt we should take it at least one step further.</p>
+
+<p>This release introduces a major improvement in Kaleidoscope's command-line integration. Instead of opening a separate tab for each file from a git or svn diff, Kaleidoscope now groups them all into a changeset. Each changeset is shown in a single tab and also includes files that are added or deleted. We've had the luxury of using it ourselves for quite a while now and it makes an amazing difference in integrating with version control systems.</p>
+
+<p>Watch a demonstration right here:</p> 
+
+<iframe src="http://player.vimeo.com/video/17363481" width="640" height="400" frameborder="0" style="float:right; width:648px; clear:right; margin-bottom:30px; border:1px solid #CCC; padding:4px;"></iframe>
+
+<p>Additionally, we spent a great deal of time sweating the details in the Text Scope. It's now possible to pick any font you want (Zapfino anyone?). We also added options to choose between a dark and light background, coupled with the option to use a multicolor or single color change highlighting scheme. All this together allows users to adjust text display to their heart's content.</p>
+
+<p>Kaleidoscope 1.1 also fixes a ton of other issues, and it's even faster than before. Thanks everyone for submitting your crash logs, those are invaluable and let us track down a lot of previously unknown bugs. Visit Kaleidoscope's <a href="http://www.kaleidoscopeapp.com/releasenotes">release notes</a> for a complete list of what's improved.</p>
+
+<h2>Looking ahead</h2>
+<p>With these two milestones behind us, we are very excited to take both apps even further next year.</p>
+
+<p>We'd like to thank everybody for their support and extensive feedback, please keep it coming.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Double Rainbow</span> written by <a href="http://twitter.com/jasperhauser" class="author">Jasper Hauser</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/double-rainbow/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/double-rainbow/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/double-rainbow/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Cocoaheads Presentation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../interning-at-sofa/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Interning At Sofa</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Thursday the 28<sup>th</sup> <em>of</em> May, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Gameboards and GUIs </span><a href="../gameboards-and-guis/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Cocoaheads Presentation&nbsp;</h2>
+				<h3 class="author"><em>by</em> Klaas Pieter Annema</h3>
+				<p class="intro">Yesterday I talked about iPhone development and our latest application during CocoaHeads Amsterdam.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>To be able to graduate I had to show that I am able to hold a presentation about a product in a corporate environment. Because everybody here at Sofa already knows what products I worked on and because we&#39;re not really a corporate environment, it felt useless to do the presentation for my colleagues. So I arranged that I could give it during <a href="http://groups.google.com/group/cocoaheads-amsterdam">CocoaHeads Amsterdam</a>.</p>
+
+<p>My presentation was about two things; general iPhone development and a user interface demo of our new iPhone application: Cards. You know the one I couldn&#39;t talk about in my <a href="http://www.madebysofa.com/blog/interning_at_sofa">previous</a> post. Here are the slides:</p>
+
+<div class="button">
+	<a href="http://madebysofacom.appspot.com/media/downloads/blog/cocoaheads_presentation/CocoaHeadsPresentation.mov">Download with Animation</a>
+	<a style="margin-left:10px;" href="http://madebysofacom.appspot.com/media/downloads/blog/cocoaheads_presentation/CocoaHeadsPresentation.pdf">Download without Animation</a>
+</div>
+
+<h2>View Controllers</h2>
+<p>The first thing I talked about were <a href="http://developer.apple.com/iphone/library/featuredarticles/ViewControllerPGforiPhoneOS/Introduction/Introduction.html">view controllers</a>. View controllers are the base of almost all iPhone applications. View controllers are extremely integrated into the iPhone, it&#39;s almost impossible to write a normal application without them. Luckily, they&#39;re also pretty easy to learn.</p>
+
+<p>View controllers give you a lot of flexibility, but also restrict you in some ways. They&#39;re powerful because they allow view customization at a lot of points in time. View controllers also have some restrictions, the most important one is that it&#39;s not easy to use them to show non-fullscreen views. Apple&#39;s method to present view controllers all assume the view will be fullscreen. If you want to manage a non-fullscreen view hierarchy with a custom view controller, you&#39;ll have to call all the methods, that make using view controllers so powerful, yourself.</p>
+
+<p>The methods I&#39;m talking about can be divided in two groups. Methods that are meant to show the view and methods that are meant to hide it (Note: Apple&#39;s <a href="http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40006926-CH3-SW45">grouping</a> is better, but I used these for presentational purposes).</p>
+
+<h4 class="border">Showing</h4>
+<div class="list">
+	<ul class="no_bullets">
+		<li><code>- (void)loadView</code></li>
+		<li><code>- (void)viewDidLoad</code></li>
+		<li><code>- (void)viewWillAppear:(BOOL)animated</code></li>
+		<li><code>- (void)viewDidAppear:(BOOL)animated</code></li>
+	</ul>
+</div>
+
+<h4 class="border">Hiding</h4>
+<div class="list">
+	<ul class="no_bullets">
+		<li><code>- (void)viewWillDisappear:(BOOL)animated</code></li>
+		<li><code>- (void)viewDidDisappear:(BOOL)animated</code></li>
+	</ul>
+</div>
+
+<p>Basically the first two methods are for programmatically creating your views or customizing them after they&#39;re loaded from nib. The second two are for customizing your view before or after it&#39;s shown. A sample usage could be to setup a view for animation in <code>viewWillAppear:</code> and to actually run the animation in <code>viewDidAppear:</code> The &lsquo;Hiding&rsquo; methods can be used to tear down anything. You could, for example, remove notifications.</p>
+
+<p>After that I showed some simple animations of the actual showing and disappearing of views using a normal view controller and a navigation controller. I also explained a bit about how navigation controllers are stacks and how these work. Both explanations are outside the scope of this post, if you want to learn about any of these, take a look at the documentation.</p>
+
+<h2>URL Requests</h2>
+<p>The second part of iPhone development I talked about is delivering content to your application. There are two ways of doing this. Bundle it in your application and/or use Apple&#39;s frameworks to get information from the phone or get it from the cloud. For me, <a href="http://developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html">NSURLRequest</a> has helped a lot with the latter.</p>
+
+<p>I used two examples to show how <code>NSURLRequest</code> works. One to show how to do a HTTP POST request and the other to show how to fetch a <code>UIImage</code> from the web. You could use the code snippets in my presentation, but to make your live a bit easier I&#39;ve also created a <a href="http://madebysofacom.appspot.com/media/downloads/blog/cocoaheads_presentation/URLRequestExamples.zip">sample application</a> that fully implements both examples.</p>
+
+<h2>Cards</h2>
+<div class="align_image_left" style="margin-top:-2px;">
+	<img class="no_border" src="../../media/img/blog/cocoaheads_presentation/cards.png" width="420" height="395" alt="An image of the Cards icon.">
+</div>
+
+<p>The last thing I talked about and probably the reason why you are still reading this, is our latest application: Cards. 
+<br /><strong>Warning</strong>: everything I show from this point on, including the icon and the name is work in progress and can still change. The application has not been released and we cannot tell when it will. We are not in any way associated with the Cards application that is already available in the App Store.</p>
+
+<p>Cards is the application I talked about in my previous blog post. It&#39;s the application that learned me an incredible amount about creating user interfaces and the time it takes to build them. During my presentation I tried to explain why it takes that long and where that time is spent. Because I can&#39;t actually show a demo here, I&#39;ll use some screenshots to try and explain it again.</p>
+
+<p><img class="no_border" src="../../media/img/blog/cocoaheads_presentation/export_data_button_initial.png" width="88" height="30" alt="An image of the export data button">
+One of the best examples is this button. It looks like and is a perfectly normal button, until you touch it. When touched the iPhone will begin working on formatting all your data into a format that can be send to the user. This can take a lot of time and we needed a way to show that the application is working, without blocking the user in any way.</p>
+
+<p><img class="no_border" src="../../media/img/blog/cocoaheads_presentation/export_data_button_animating.png" width="96" height="30" alt="An image of an animated export data button">
+This is the result of that action a simple progress spinner that animates into the button. Now if you see this, you might think it&#39;s easy to implement. And it is if you have an example you can copy.</p>
+
+<p>The hardest thing about creating a custom user interface like this is that you don&#39;t know if it&#39;ll work. A photoshop mockup is a great way to pre-visualize your user interface, but it&#39;s not interactive. You cannot test if a user interface works, without actually implementing it. And that&#39;s exactly where most of the time is spent when innovating. You keep re-implementing until you have the perfect solution.</p>
+
+<p>Just to make what I said even clearer, the entire Cards user interfaces has been overhauled a total of three times. I had to re-implement almost every screen again. Although we pretty much nailed the interaction the first time around, we were never happy with the way it looked. So every time we went back to the drawing board designing and implementing most of the screens from scratch.</p>
+
+<p>So I hope I made it a bit clearer why it takes so long to create our user interfaces. And I hope I made you anxious to start using Cards which will be released in the near future.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Cocoaheads Presentation</span> written by <a href="http://twitter.com/klaaspieter" class="author">Klaas Pieter Annema</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/cocoaheads-presentation/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/cocoaheads-presentation/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/cocoaheads-presentation/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

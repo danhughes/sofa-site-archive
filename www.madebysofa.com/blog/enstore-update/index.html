@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Big Enstore Update</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../welcome-pieter/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Welcome Pieter</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Wednesday the 31<sup>st</sup> <em>of</em> March, 2010
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Many Mirrors </span><a href="../kaleidoscope/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Big Enstore Update&nbsp;</h2>
+				<h3 class="author"><em>by</em> Hugo van Heuven</h3>
+				<p class="intro">Today's big update: Tons of new features and enhancements in Enstore</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>After weeks and weeks of hard work we're proud to announce the latest update to <a href="http://www.enstore.com/" target="_blank">Enstore</a>. This is by far the biggest update since the beta release of Enstore. Up until this point we've only fixed bugs, added small usability and visual enhancements, supported more countries, and tried to solve all the issues our loyal beta testers reported. Thank you all for helping us make Enstore the best e-commerce solution out there.</p>
+
+<p>Still, this update is only a tip of the iceberg of what we've got planned for Enstore. We can ensure everybody that Enstore will only get better and better as time progresses. But for now, here's what this update includes.</p>
+
+<h4>Custom Templates & Enstore Designer</h4>
+<p>Enstore templates are now totally customizable with HTML, CSS and JavaScript. Enstore Designer is a new, free Mac application that lets you create and preview templates on your own computer. Dive into the template code and start editing. You can see the result in your browser right away, without uploading your template after every change. We've written extensive documentation on how to use Enstore Designer and on how to customize templates. Find more information about Enstore Designer <a href="http://www.enstore.com/support/documentation/templates/designer">here</a>.</p>
+
+<h4>Landing Page / Welcome Page</h4>
+<p>Sometimes a list of products isn't enough. You now have the option to welcome your customers on a beautiful landing page (customizable of course). You can write and style an introductory text for your welcome page, complete with images and links. To feature products on the welcome page simply tag them "featured".</p>
+
+<h4>Custom Pages</h4>
+<p>Next to the welcome page you can add custom pages to your store as well. Create a terms and conditions page, or one with your contact details and return policies. All from the new Pages tab in your Enstore admin.</p>
+
+<h4>Main Navigation</h4>
+<p>Your store's main navigation menu is now completely customizable too. So, instead of just having Home, Shop and Contact, you can now add anything you want, in any order. To set up your new navigation menu go to the Navigation pane in your Enstore Admin.</p>
+
+<h4>More templates: Mocca and Indiana</h4>
+<p>We're introducing two new templates that you can select in your admin's Templates tab. Curious? Take a look <a href="http://www.enstore.com/examplestore/shop:mocca/page/welcome">here</a> and <a href="http://www.enstore.com/examplestore/shop:indiana/page/welcome">here</a>.</p>
+
+<h4>Beta API's</h4>
+<p>Developers may find it interesting to hear that we're opening up our APIs. We've created a REST API that will allow you to add, modify and delete items, like orders, customer records and products programatically. This means you can make your application talk to Enstore directly. The very same API is used by Checkout, AccountEdge and Enstore internally. You could for instance build a reporting application or integrate other desktop applications with Enstore. API access is currently limited, if you have a cool idea, <a href="http://www.enstore.com/support/documentation/api/introduction">get in touch</a>.</p>
+
+<p>The other API we're opening up is the Javascript API for our Shopping Cart. It allows you to modify the contents of an Enstore shopping cart or start a checkout session from any of your own websites.</p>
+
+<h4>Better Checkout Page</h4>
+
+<p>Although the checkout page was updated a week ago, we feel it's worth mentioning nonetheless. We've improved the error messaging on the checkout page, giving you and your customers a better understanding of what causes something to go awry. As an extra bonus we've spent quite some time optimizing the checkout page for all major browsers. Now it even works as it should on IE6.</p>
+
+<h4>New Support Site</h4>
+
+<p>We built a better support site that has a clear overview of all our new documentation, popular support topics and smart search that will help you get answers quick from any of our support resources.<p>
+
+<h4>And...</h4>
+
+<ul>
+	<li>Faster Admin</li>
+	<li>Sync Issues Solved</li>
+	<li>Display price including / excluding tax</li>
+	<li>Lots of template refinements (variation images)</li>
+	<li>Minimum cart order amount</li>
+	<li>Hosting status page</li>
+	<li>User definable store landing page</li>
+</ul>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Big Enstore Update</span> written by <a href="http://twitter.com/hugovanheuven" class="author">Hugo van Heuven</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/enstore-update/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/enstore-update/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/enstore-update/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

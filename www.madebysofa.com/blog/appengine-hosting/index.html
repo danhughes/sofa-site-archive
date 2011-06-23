@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - AppEngine Hosting</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../pyobjc-and-cocoa/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> PyObjC and Cocoa</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Thursday the 25<sup>th</sup> <em>of</em> September, 2008
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Mozilla </span><a href="../mozilla/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">AppEngine Hosting&nbsp;</h2>
+				<h3 class="author"><em>by</em> Koen Bok</h3>
+				<p class="intro">A while ago we started hosting some of our websites on Google AppEngine and we are quite impressed with it. Here is how we do it.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>A great thing about working at a small company like Sofa is that you can switch technologies pretty fast if something new (read: <i>better</i>) comes along. One of the technologies that caught our eye lately is <a href="http://appengine.google.com">Google App Engine</a>. It&#39;s a hosting platform built by Google to serve dynamic websites with <a href="http://www.python.org">Python</a> and their <a href="http://en.wikipedia.org/wiki/BigTable">BigTable</a> data storage solution. The idea is that if you build your website to be served on AppEngine it will be delivered from any of the servers in Googles&#39; huge server park, also called &ldquo;The Cloud&rdquo; by technology fashionistas.</p>
+
+<h2>Advantages</h2>
+<p>Using a platform like AppEngine will bring scalability, speed and reliability to your website. Although scalability is not the biggest issue for our websites, particularly as our sites are pretty static, we do get hit now and then by Digg/Reddit when doing a software update and it&#39;s nice to know your site will hold up. But speed and reliability are just as important to us as the next company, as we operate mostly online and the internet is a huge sales channel for us. The way AppEngine achieves this is by sharing the load of your website over lots of servers, so if one goes down another one will pick up. Also, AppEngine tries to serve the content from a server geographically near you so the delivery speed will be optimal, sometimes called a <a href="http://en.wikipedia.org/wiki/Content_Delivery_Network">CDN</a>.</p>
+
+<div class="align_image_left">
+	<img src="../../media/img/blog/appengine_hosting/dashboard.png" width="420" height="290" alt="An image of the AppEngine dashboard.">
+	<small>AppEngine Dashboard.</small>
+</div>
+
+<p>That said, it would be pretty hilarious if this post gets Dugg and the entire Sofa site goes down. But then at least I&#39;ll have a cool topic for my next blog post.</p>
+
+<p>From a user perspective AppEngine has huge advantages too. Running a development server on your local machine is really easy because it&#39;s wrapped in a nice little application with shiny buttons. And because the interface to AppEngine online is entirely web based (called the &lsquo;Dashboard&rsquo;), you don&#39;t have to be some unix expert to alter settings, check the status or deploy a new version. Additionally the Dashboard provides a really nice overview of how your application is doing with load statistics per page and access to logfiles.</p>
+
+<h2>Disadvantages</h2>
+<p>All these benefits can be achieved in other ways too, so it&#39;s hard to say that AppEngine is the best way to serve your content. Actually, there are some big disadvantages too. If you build your website on the AppEngine platform, and especially on BigTable, it decreases the <a href="http://www.guardian.co.uk/technology/2008/sep/29/cloud.computing.richard.stallman">portability of your site</a>. People who would like to use something other than Python, such as Ruby, Perl or PHP are currently out of luck (<a here"http://code.google.com/p/perl-appengine/">though Google is apparently working on it</a>). In addition, there are some technical limits like the maximum file size being 1 megabyte and a total maximum of 1000 files, which is only just enough to install <a href="http://www.djangoproject.com">Django</a>. Finally, as of now AppEngine does not support SSL so we actually have to handle payments through a different server.</p>
+
+<p>But&hellip; AppEngine is free, at least if you stay below the <a href="http://code.google.com/appengine/articles/quotas.html">daily quotas</a> which will give you enough resources to serve up to ~100 000 visits per day. If you compare that to the (<a href="http://www.joyent.com/accelerator">really good</a>) hosting we used before, then it&#39;s hard not to see AppEngine&#39;s attractiveness. And because we already used Python and Django extensively before we started hosting on AppEngine, it literally took us an hour or so to get them to work on AppEngine.</p>
+
+<h2>Some Results</h2>
+
+<div class="align_image_left">
+	<img src="../../media/img/blog/appengine_hosting/response_graph.png" width="400" height="240" alt="An image with the global response time of versionsapp.com">
+	<small>Global response time versionsapp.com.</small>
+</div>
+
+<p>So before I go into detail about our setup, I&#39;ll share some results about our own sites to keep you excited. It&#39;s pretty hard to quantize global website performance, but one thing that was really visible was the global response time measured by <a href="http://www.pingdom.com">Pingdom</a>. Pingdom measures the <a href="http://en.wikipedia.org/wiki/Network_Latency">latency</a> (the amount of time it takes a packet to travel from source to destination) from more than twenty locations worldwide every minute. As can be clearly seen in graph 2, the latency of versionsapp.com dropped almost five fold once we started hosting on AppEngine. As for reliability, we have had no issues yet, and graph 2 also shows that there has been a lot less fluctuation in latency since we switched. And for real world testing, the site just feels way faster from every location we tested.</p>
+
+<p>Getting a speed increase like this within a couple of hours just by switching hosting is pretty good in my opinion. And don&#39;t forget we&#39;re actually <i>saving</i> money here! For all those who are still here I&#39;ll share how we have set up AppEngine to host our sites, and integrated it into our workflow.</p>
+
+<h2>Our Previous Setup</h2>
+<p>The way we build websites at Sofa has been pretty enjoyable for coders and designers (we need to keep them both happy). We use Django to build our sites as it is a very nice and powerful Framework to work with that in addition uses our favorite language (Python). We use the built-in Django webserver for local development and keep all our code in Subversion. With every commit, the server uploads the latest code to the staging server (a server identical to our actual production server) to test it thoroughly. Once we feel a website is ready to go live, we update it by hand using Subversion. This way if something really goes wrong we can revert in a matter of seconds. (Did I mention there is a very nice <a href="http://www.versionsapp.com">Mac Subversion client</a>?)</p>
+
+<h2>Step 1: Getting AppEngine</h2>
+<p>Open an AppEngine account at <a href="http://code.google.com/appengine/">http://code.google.com&#x200b;/appengine/</a>, and download and run the <a href="http://code.google.com/appengine/downloads.html">installer</a>.</p>
+
+<h2>Step 2: Getting Django Running</h2>
+<p>You have a couple of options to get Django running on AppEngine. The official one is <a href="http://code.google.com/p/google-app-engine-django/">google-app-engine-django</a>, but I decided to go with <a href="http://code.google.com/p/app-engine-patch/">app-engine-patch</a> as it supported Django 1.0 and Sessions back when I had to choose between the two. Both projects expect to have a full copy of the Django source included in the project folder, and because Django is pretty big you might hit the 1000 file limit. Therefore, I stripped all the modules from Django that AppEngine does not support. Also, make sure that if you checkout your source from the Django Subversion repository, you delete the hidden .svn subfolders as they will obstruct committing the code to your own repository later. I created a simple <a href="http://www.madebysofa.com/mediadownloads/update_django.sh">shell script</a> to update Django and take care of all this. Just place it next to the Django folder in your project and run it whenever you want to update to the latest version.<p>
+
+<p>If you are porting an existing Django project and it uses SQL for storage (like this blog used to do), you will have to re-implement most of it to use Google's <a href="http://code.google.com/appengine/docs/datastore/">DataStore API</a>. How to setup app-engine-patch is described <a href="http://code.google.com/p/app-engine-patch/wiki/GettingStarted">here</a>. Choose a good name for your project, but make sure you only use lowercase alphanumeric characters (a-z) to save yourself some headaches later (we use names like versionsapp and madebysofa). Building an actual Django site is beyond the scope of this article, but the <a href="http://www.djangoproject.com">Django website</a> contains great tutorials and documentation.</p>
+
+<h2>Step 3: Setting up Subversion</h2>
+<p>Start a normal Subversion repository by typing &#39;svnadmin create <i>name</i>&#39;. This will create a folder with the given name containing some standard Subversion subdirectories. Set up your Subversion client to create a working copy from your initial empty data, and create the default Subversion folder structure: branches, trunk, tags. Move your new AppEngine project folder (in our case &#39;versionsapp&#39;) into trunk. We leave the project files in the subfolder, as in some cases Django expects your root folder to be named the same as your project, and otherwise your project would be given the name &#39;trunk&#39;.</p>
+
+<h2>Step 4: Staging and Deployment</h2>
+
+<div class="align_image_left">
+	<img src="../../media/img/blog/appengine_hosting/gae_versions.png" width="420" height="240" alt="An image of the different versions on Google AppEngine for madebysofa.com">
+	<small>Google AppEngine versions for madebysofa.com.</small>
+</div>
+
+<p>Staging and deployment works a little differently on AppEngine than our old setup and I actually think it&#39;s way nicer. As our old setup had one server instance for the newest version of the site (the trunk) only visible to the makers and one production server that handles the public site, AppEngine can keep multiple versions of your site online at the same time (up to ten or so). They can be accessed through cryptic urls containing the version number found in the AppEngine online Dashboard. One of the versions can be set to default to handle the traffic from your primary address, making deploying of a new version a breeze.
+</p>
+
+<p>One of the most handy things we used to have with our old setup was automatic updating of the staging server on a Subversion commit, so I created a <a href="http://www.madebysofa.com/mediadownloads/appengine_deploy.sh">commit-hook script</a> for Subversion to automatically add the latest revision to AppEngine with the revision number as the version. It&#39;s a little tricky to get it to work, but if you follow the instructions in the script comments you should be fine.</p>
+
+<h2>Conclusion</h2>
+<p>AppEngine can be a really nice way to host your new, or accelerate your current site. It has some great features that would be very expensive if you actually had to pay for it at some other provider. It&#39;s also pretty easy to move your current Django project over if you are willing to re-engineer your storage to use BigTable.</p>
+
+<p>So there you have it&hellip; Free hosting. That&#39;s hosting you just can&#39;t buy! But with the features of hosting you probably can&#39;t afford.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>AppEngine Hosting</span> written by <a href="http://twitter.com/koenbok" class="author">Koen Bok</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/appengine-hosting/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/appengine-hosting/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/appengine-hosting/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

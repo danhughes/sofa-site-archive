@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Interning At Sofa</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="http://www.madebysofa.com/media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="http://www.madebysofa.com/media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="http://www.madebysofa.com/media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="http://www.madebysofa.com/media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="http://www.madebysofa.com/media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="/">www.madebysofa.com</a>
+				<a class="blog" href="/blog">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../blog/ruby-on-osx-slides"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Ruby on OS X Talk</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Thursday the 21<sup>st</sup> <em>of</em> May, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Cocoaheads Presentation </span><a href="../blog/cocoaheads-presentation">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Interning At Sofa&nbsp;</h2>
+				<h3 class="author"><em>by</em> Klaas Pieter Annema</h3>
+				<p class="intro">This is the last week of my internship at Sofa. What better way to summarize what I&#39;ve learned than in a blog post?</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>Nine months ago I started my internship here at Sofa. My assignment was to create an iPhone application. It took me one month to create a working application without a proper user interface. So I was almost done&hellip; Right? You probably know that Sofa&#39;s user interface quality standards are high, but how long do you think it takes to adhere to them? I&#39;ve started my internship nine months ago and I can&#39;t talk about what I did, because it&#39;s still not done!</p>
+
+<h2>User Interfaces</h2>
+<p>So I learned not to underestimate the user interface. Yes, but I also learned something way more important. Before I started at Sofa I knew about the importance of user interfaces, but somehow, I never applied this knowledge. To me user interfaces were a necessary evil; something a product needed to have to show off all the incredibly complex features I implemented.</p>
+
+<p>I learned that a user interface should never reflect the complexity of a feature directly. As a programmer, I wanted users to acknowledge the amount of work I put into a feature. I abused the user interface to show this complexity and hoped the user would recognize and appreciate my work.</p>
+
+<p>A user does not see the complexity of a feature, not even if you make using it as hard as implementing it. I always show stuff I&#39;m excited about to my fiancee. Somehow, she never is quite as excited as I am. She, like most non-technical users, just doesn&#39;t see the complexity.</p>
+
+<p>Users don&#39;t care about the complexity of features, they want software to work in ways they expect. When a user interface visualizes complex features in easy to use ways, people will enjoy using your product and get excited about it. Which brings me to the next thing I learned.</p>
+
+<h2>The One Rule</h2>
+<p>There are a lot of applications out there that aren&#39;t fun to use. Don&#39;t developers use their own products? I don&#39;t know, but I think they should. If developers aren&#39;t familiar with the problem they&#39;re solving, how do you think they can solve it? All of Sofa&#39;s applications follow a simple rule: Create software that solves problems you understand and care about.</p>
+
+<p>This is, I think, one of the biggest advantages of working in a small company. Everyone at Sofa shares the same vision about software; we want to create beautiful, stunning and easy to use products. Of course, there are big companies that build software in a similar spirit, but regrettably, most don&#39;t. This is no surprise, since managing this becomes harder as the number of employees increase.</p>
+
+<h2>David vs. Goliath</h2>
+<p>During my internship at Sofa, a lot of my opinions and prejudices slowly changed. I&#39;ve already talked about my huge transition from a UI-indifferent Windows programmer to an interface-centered iPhone developer. Another prejudice that slowly changed, was how I felt about working at a smaller company.</p>
+
+<p>Before Sofa, I always pictured myself working in a large company. I can&#39;t recall my exact reasoning, but I think the thing I wanted most was a successful career, stepping up the corporate ladder as quickly as possible and giving leadership to increasingly more random people. Random because I probably didn&#39;t hire them. Random because they probably wouldn&#39;t share my (or each others) vision about software development.</p>
+
+<p>I probably wouldn&#39;t have gotten much fun or satisfaction from such a career. On top of that, I was excited about the wrong aspect of it. I wasn&#39;t excited about developing great products, I was excited about being as high-up and important as possible. And yes, probably about the salary that comes with those positions as well. I don&#39;t want to imply that such a position (and its paycheck) can&#39;t be fun, challenging or exciting. I&#39;m just saying that I was excited about everything but creating great software.</p>
+
+<p>Now onto something I <em>am</em> excited about.</p>
+
+<h2>I Got the Job!</h2>
+<p>The second my opinions about smaller companies started to change, my goals started to change as well. I wanted <strong>this</strong> job. And I got lucky; Sofa offered it to me on one condition, the same one that applied to my internship: I was not allowed to pack my own lunch ;). So now I travel two hours to get to work and two hours to get back home every day. Why? Because I am excited about creating beautiful, stunning and easy to use products!</p>
+
+<h2>Finishing Up</h2>
+<p>I learned a lot more than this, but the above three things were by far the most important. If my post inspired you <em>and</em> you want to write just such a post after some intense pixel perfect programming, send an email to <a href='mailto:<script type="text/javascript">document.write(
+"xbra\100znqrolfbsn\056pbz".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+</script>'>Koen</a> or <a href='mailto:<script type="text/javascript">document.write(
+"qvex\100znqrolfbsn\056pbz".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+</script>'>Dirk</a> and they&#39;ll get back to you.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Interning At Sofa</span> written by <a href="http://twitter.com/klaaspieter" class="author">Klaas Pieter Annema</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href=\"http://twitter.com/versionsapp/status/" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

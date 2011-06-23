@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Welcome Jenneke and Floris</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/post.css" type="text/css" media="screen" charset="utf-8">
+	<style type="text/css" media="screen">
+		h2.tk-league-gothic {text-align:center; font-size:70px; text-transform:uppercase; color:#222; line-height:1;}
+		h3.author {text-align:center; font-size:20px; color:#222; margin:0 0 15px 0;}
+		h3.author em {color:#BBB;}
+		p.intro {text-align:center; font-size:18px; line-height:30px; color:#888;}
+		.post .left_col p {font-size:16px; color:#666; line-height:26px;}
+		h2.name {font-size:22px; color:#111; margin:10px 0; line-height:28px; text-transform:none;}
+	</style>
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="http://www.madebysofa.com/media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="http://www.madebysofa.com/media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="http://www.madebysofa.com/media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="http://www.madebysofa.com/media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="http://www.madebysofa.com/media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="/">www.madebysofa.com</a>
+				<a class="blog" href="/blog">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../blog/template-design"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Template Design</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Thursday the 16<sup>th</sup> <em>of</em> September, 2010
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Sofa Acquires Versions </span><a href="../blog/sofa-acquires-versions">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+		<div class="post">
+			<h2 class="tk-league-gothic">Welcome Jenneke and Floris&nbsp;</h2>
+			<h3 class="author"><em>by</em> Jasper Hauser</h3>
+			<p class="intro">We are happy to introduce two new members of the Sofa team. Firstly Jenneke Vald&eacute;s, who will dedicate her time to supporting our products and customers. And secondly Floris Verloop, our new design and interaction intern.
+<div class="clear"></div></p>
+		</div>
+		<div class="post">
+			<div class="left_col">
+	<h2 class="name">Jenneke</h2>
+	<p>
+		<img src="http://www.madebysofa.com/media/img/company/jenneke-valdes-off.jpg" width="82" height="82" style="float:left; margin:5px 15px 0 0;">
+		<strong class="question">Q </strong>Tell us something about yourself.<br>
+		<strong class="answer">A </strong>I'm Jenneke, 24 years old and I live in Amsterdam. I have a Bachelor's degree in Sociology with a focus on culture and media, but my real passions are computers, gadgets, technology and fixing stuff.</p>
+
+	<p><strong class="question">Q </strong>What did you do before coming to Sofa?<br>
+	<strong class="answer">A </strong>I processed study data for cancer medicine, so you could say that's something pretty positive and helpful for the entire human race. I also was a sales assistant at an Apple reseller where I would be selling Macs, software and all things related to that, and I spend a lot of time explaining those things to the customers. I was always hanging around with the technical support staff as they're the biggest geeks in a retail store. That's how I got started with support.</p>
+	<p>Ever since I was little, I have always been the one who had to fix anything computer/electronics-related for my family and later also for friends, so that might have been kind of an influence too.</p>
+
+	<p><strong class="question">Q </strong>What kind of projects have you worked on before?<br>
+	<strong class="answer">A </strong>I guess you can say I'm kind of a noob here, because I've never before worked at a place as exciting and innovative as Sofa.</p>
+
+	<p><strong class="question">Q </strong>What will you do at Sofa?<br>
+	<strong class="answer">A </strong>I will be doing support for all of Sofa's software, so I'm going to be helping people make the most of their software, and apart from that I'll be working on the support documentation for the software, making sure all the typos and spelling mistakes are corrected.</p>
+
+	<p><strong class="question">Q </strong>What kind of projects do you find interesting?<br>
+	<strong class="answer">A </strong>I'm really interested in seeing Enstore develop into something even more awesome than it is today.</p>
+
+	<p><strong class="question">Q </strong>What other things do you like doing?<br>
+	<strong class="answer">A </strong>I love to cook, especially dinner with a lots of friends. I love to read and call myself a gamer. Another hobby of mine is fixing Macs, and messing around with old Apples. At home I've got 3 old iMac G3s, an iBook, an eMate 300 and 2 Newtons. And they all function pretty well.</p>
+
+	<p><strong class="question">Q </strong>How is your relation with Zowieso?<br>
+	<strong class="answer">A </strong>I'm working on a plot to make him fall in love with my cat Yuki, although I'm not sure if my other cat Norman would approve of that...</p>
+
+	<p><strong class="question">Q </strong>Anything else?<br>
+	<strong class="answer">A </strong>Coffee!</p>
+</div>
+
+<div class="right_col">
+	<h2 class="name">Floris</h2>
+	<p>
+		<img src="http://www.madebysofa.com/media/img/company/floris-verloop-off.jpg" width="82" height="82" style="float:left; margin:5px 15px 0 0;">
+		<strong class="question">Q </strong>Tell us something about yourself.<br>
+		<strong class="answer">A </strong>I'm Floris and I currently study Communication- and Multimedia design. I live in Katwijk, a small seaside town. Most of the time you'll find me sitting behind my Mac or playing with my iPhone or iPad.</p>
+
+	<p><strong class="question">Q </strong>How did you end up picking that study subject?<br>
+	<strong class="answer">A </strong>I first worked with HTML when I was 11 years old. With Frontpage as my weapon of choice, I made useless websites about my interests. Yes, these websites included animated GIF images and they were all just a big table. These first attempts where just for fun, and I always kept building websites on the side,  but a few years later I realized (mainly because I was doing some boring management school), I wanted to work with the web full-time. I bought a Mac, applied for my current education and started to fully focus on the web.</p>
+
+	<p><strong class="question">Q </strong>What's the last project you worked on?<br>
+	<strong class="answer">A </strong>The last big thing was my portfolio website (which got me this awesome internship). When I was accepted I built a small page about my internship to show my excitement. At the moment I'm working on my personal blog, to keep track of all the things I'm learning here.</p>
+
+	<p><strong class="question">Q </strong>What will you do during your internship?<br>
+	<strong class="answer">A </strong>I will be focussing on learning as much as possible about interface design. During my time here I'll divide my time learning all about interaction design, design, HTML/CSS and Javascript.</p>
+
+	<p><strong class="question">Q </strong>What do you like most about interaction design?<br>
+	<strong class="answer">A </strong>I really like to create interfaces that people actually use, not just once, but on a daily basis. I like projects where I can work from sketch, to interaction, to design, to finally building it with HTML and CSS. Thinking out every detail there is. Besides building interfaces, I love creating icons.</p>
+
+	<p><strong class="question">Q </strong>What do you like doing in your leisure time?<br>
+	<strong class="answer">A </strong>You will mostly find me on, or around, the couch. I love gaming. It's a nice way to &lsquo;unload&rsquo; my mind. I'm a huge fan of the Halo franchise and you can often find me making headshots on Xbox Live. Besides gaming I like to check out tv shows or grab a movie at the cinema.</p>
+
+	<p><strong class="question">Q </strong>How is your relation with Zowieso?<br>
+	<strong class="answer">A </strong>The only thing he does when he is around me is fall asleep to take another 14 hour nap. Maybe he's secretly making sure I do my job.</p>
+
+	<p><strong class="question">Q </strong>Anything else?<br>
+	<strong class="answer">A </strong>If you're interested in following my adventures here at Sofa, visit my personal website <a href="http://www.florisverloop.nl">florisverloop.nl</a>.</p>
+</div>
+			<div class="clear"></div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Welcome Jenneke and Floris</span> written by <a href="http://twitter.com/jasperhauser" class="author">Jasper Hauser</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href=\"http://twitter.com/versionsapp/status/" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

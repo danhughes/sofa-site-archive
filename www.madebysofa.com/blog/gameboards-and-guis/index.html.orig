@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Gameboards and GUIs</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="http://www.madebysofa.com/media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="http://www.madebysofa.com/media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="http://www.madebysofa.com/media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="http://www.madebysofa.com/media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="http://www.madebysofa.com/media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="/">www.madebysofa.com</a>
+				<a class="blog" href="/blog">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../blog/cocoaheads-presentation"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Cocoaheads Presentation</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Thursday the 4<sup>th</sup> <em>of</em> June, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Sofa&#39;s Next Big Thing </span><a href="../blog/next-big-thing">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Gameboards and GUIs&nbsp;</h2>
+				<h3 class="author"><em>by</em> Cathy Shive</h3>
+				<p class="intro">Can a graphical user interface be like a gameboard?</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>Can a graphical user interface be like a gameboard? I don&#39;t mean to suggest that it might be possible for users to <em>play</em> an application the way they would play a board game. That would be weird and counter-productive. But, if we put aside the obvious differences between games and applications, is there something we can learn about interface design from gameboards?</p>
+
+<p>This question has been in the back of my mind since I read Katie Salen and Eric Zimmerman&#39;s excellent game design book, <a href="http://www.amazon.com/Rules-Play-Game-Design-Fundamentals/dp/0262240459/ref=sr_1_1?ie=UTF8&s=books&qid=1242972630&sr=8-1">Rules of Play</a>‚ specifically a short section where they talk about the function of the gameboard in the popular children&#39;s game, Chutes and Ladders.</p>
+
+<div class="align_image_left">
+	<img class="no_border" src="http://www.madebysofa.com/media/img/blog/gameboards_guis/chutes_ladders.png" width="420" height="277" alt="An image of the boardgame Chutes &amp; Ladders">
+</div>
+
+<p>In case you haven&#39;t played Chutes and Ladders, the rules are pretty simple. Players take turns advancing their tokens a random number of steps. They start at 0 and the first player to reach 100 wins. As a player moves forward, they might land on a number with an associated &lsquo;chute&rsquo; or &lsquo;ladder&rsquo;, at which point they either have to move backwards a certain number or steps or they get to jump ahead.</p>
+
+<p>Salen and Zimmerman point out that the game could be played out on a couple of sheets of paper instead of on the gameboard. You&#39;d need one sheet of paper to keep score and another as a cross reference for the &lsquo;chute&rsquo; and &lsquo;ladder&rsquo; numbers. However, the experience of the game would become much more complex, especially for children in the target age group (ages 3-7) who might not be able to do the math necessary to keep score.</p>
+
+<p>So it&#39;s not just the underlying, or <i>constitutive</i>, rules that make Chutes and Ladders a successful game, it&#39;s very much to do with what the gameboard adds to the experience of playing:</p>
+
+<blockquote>
+<p style="width:410px;">The use of the gameboard in the process of generating a random number, recording progress, and seeing whether or not your token climbs or slides, helps emphasize the meaning of the game in a number of ways:</p>
+
+<div class="list" style="width:410px;">
+	<ul style="width:410px;">
+		<li>The board contains all aspects of the game information, progress towards the end space as well as climbing and sliding‚ at once.</li>
+		<li>The representations of the players (their tokens) are all in the same &ldquo;space&rdquo;, making comparison of relative positions immediate and intuitive.</li>
+		<li>Players can clearly see the consequences of their actions, whether it is moving normally during a turn, climbing, or sliding.</li>
+	</ul>
+</div>
+</blockquote>
+
+<p>Wow, Chutes and Ladders has a great interface.</p>
+
+<h2>Workflows and Overview</h2>
+<p>I asked<a href="http://www.jasperhauser.nl/"> Jasper Hauser</a> what he thought about the comparison of gameboards and GUIs and he made the observation that the important thing to get from the text, in terms of interface design, is the concept of an <strong><em>overview of a workflow</em></strong>. He&#39;s absolutely right. The board gives players a high-level, visual overview of the game&#39;s &lsquo;workflow&rsquo; and their position within it. The result is that players are able to understand the game&#39;s state and to predict how their actions will effect their progress in the game–with a single glance.</p>
+
+<p>This is extremely powerful, but is this amount of overview something that graphical user interfaces can benefit from or strive to achieve? I think so. Until recently, it&#39;s been acceptable to just throw every feature of an application onto the screen at once and to let users access anything at any time. This is how older applications like Photoshop, After Effects and Final Cut Pro were designed. While functional, these types of designs have two major downsides: they tend to be overwhelming to new users and it can take years to become productive with the application. This is the opposite of what a lot of us are trying to accomplish with our interface designs.</p>
+
+<p>More recently, with UI design trending towards a single-window approach and especially with the iPhone, we&#39;re seeing more thought being put into designing workflows. The <em>experience</em> of navigating and working inside of a prescribed workflow has become a critical factor to the success of an interface design. If the workflow of an application is fairly logical and easy to navigate, the software might be described as "intuitive" or to have "ease of use". On the other hand, if a user feels stuck or lost too often, they probably won&#39;t use the software again. Workflow and navigation design is a tricky business. I&#39;d go so far as to say that it is the hardest problem to solve in a modern interface design. But, it&#39;s becoming more and more unavoidable.</p>
+
+<p>I won&#39;t get into the topic of designing workflows, but assuming that an application has one, the issue of providing an overview and how that can help a user to understand, navigate and act within the workflow, becomes very relevant. The more our designs can clue them in, the better their experience will be. This is where gameboards can help.</p>
+
+<p>Let&#39;s take look at the points Salen and Zimmerman make about the Chutes and Ladders gameboard again. I would like to adjust them a little to suit our purposes by summarizing and by replacing the word &ldquo;gameboard&rdquo; with &ldquo;interface&rdquo; and &ldquo;player&rdquo; with &ldquo;user&rdquo;:</p>
+
+<div class="list">
+	<ul>
+		<li>The interface provides a high-level overview of the entire workflow of the application.</li>
+		<li>Users can immediately and intuitively see where they are in the workflow in relation to where they&#39;ve been and where they might go.</li>
+		<li>Users can clearly see how their actions move them through the workflow.</li>
+	</ul>
+</div>
+
+<p>It&#39;s not perfect, but looking at these points, there are at least two things I know we can do to achieve (even if just a fraction of) what the gameboard achieves: The visualization of hierarchy and focus.</p>
+
+<h2>Hierarchy and Focus</h2>
+<p>It&#39;s unlikely that an interface can display its entire workflow all at once, but it can still provide an overview of the workflow through the layout of its hierarchy. &lsquo;Hierarchy&rsquo; refers to the organization of an application&#39;s workflow as hierarchical groups of sub-workflows. In a document-based application, for example, the highest-level of the workflow is the application itself. Launching and quitting the app and creating new documents are part of this scope of the hierarchy. Inside of that, users navigate between documents and inside of that, they navigate and work with the actual content of the application.</p>
+
+<p><img class="no_border" style="margin-left:-490px; margin-top:-4px" src="http://www.madebysofa.com/media/img/blog/gameboards_guis/itunes.png" width="700" height="481" alt="An image of iTunes&#39; interface (version 2)">Remember this? The early iTunes window is the first example of strong visualization of hierarchy and focus that I can remember. I knew how to use this application immediately.<br><br>The better our interfaces can visualize the hierarchy of our application in its layout, the more information we are giving users about the workflow, which helps to make the interface easier and more enjoyable to use.</p>
+
+<p>There are some rules-of-thumb we can use to lay out a hierarchy so that it provides a strong overview of the application&#39;s workflow. In general, the workflow should be organized in a nested layout that starts with the most important, or global, entities at the top, left parts of the window. These outer layers enclose more context-specific, sub-workflows, which get laid out towards the lower, right parts of the window.</p>
+
+<p>The deeper we get into the hierarchy, the more likely it is that entire modules of the interface will get switched out with other modules. Even though we might not be able visualize the entire workflow at once, we can use visual tricks, like animation, to help users build a <a href="http://en.wikipedia.org/wiki/Cognitive_map">mental map</a> of the workflow as they navigate it.</p>
+
+<p>The consistent and logical layout of an application&#39;s hierarchy, along with a few visual tricks can provide users with a strong overview of the workflow–even the parts of it that aren&#39;t visible. The next step is to add real-time feedback about the user&#39;s activity. This can be accomplished by strong visualization of focus.</p>
+
+<p>Visualizing focus includes having well designed selection highlights, a consistent color-scheme for visualizing a view&#39;s &lsquo;key&rsquo; status and the use of focus rings to show navigation through sub-workflows. The visualization of focus gives users information about their position in the workflow and how they got there. This, combined with a good layout will hep them guess where they might go next.</p>
+
+<h2>Monopoly, anyone?</h2>
+<p>As more modern apps take a single-window interface approach, solving this problem of how to provide a good real-time overview of a structured workflow is going to become more and more important to solve. It&rsquo;s not easy and, unfortunately, there are few precedents to look towards for guidance. Maybe we should start playing more board games?</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Gameboards and GUIs</span> written by <a href="http://twitter.com/catshive" class="author">Cathy Shive</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href=\"http://twitter.com/versionsapp/status/" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

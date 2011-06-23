@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Template Design</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../kaleidoscope/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Many Mirrors</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Friday the 30<sup>th</sup> <em>of</em> July, 2010
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Welcome Jenneke and Floris </span><a href="../welcome-jenneke-floris/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Template Design&nbsp;</h2>
+				<h3 class="author"><em>by</em> Joy-Vincent Niemantsverdriet</h3>
+				<p class="intro"><p>When we first released <a href="http://www.enstore.com">Enstore</a>, we designed some store <a target="_blank" href="http://enstore.com/demo">templates</a> to get you started with a great-looking store and today we're adding two more: <a target="_blank" href="http://examplestore.enstore.com/template:hawaii/page/welcome">Hawaii</a> and <a target="_blank" href="http://examplestore.enstore.com/template:asphalt/page/welcome">Asphalt</a>. We've learned a lot creating our default templates, in this post we share some do's and don'ts for when you're designing a template for your store.</p></p>
+				
+				
+			</div>
+			<div class="right_col">
+				<!-- <h2>Design & Layout</h2> -->
+<p>The way a template is designed has a lot of influence on the shopping experience of a customer. First impressions are really important, because a badly designed template will cause your customers to lose interest, and more importantly their trust in your store. At the end of the day, the more they enjoy shopping at your store, the more money you're going to make.</p>
+
+<h2>Customization</h2>
+<p>By customizing a template you can add more personality to your store to increase your store's value. </p>
+<p>You don't need a lot of HTML knowledge to customize your store, because you can customize a template in different ways. For example, the <a target="_blank" href="http://examplestore.enstore.com/template:asphalt/page/welcome">Asphalt</a> and <a target="_blank" href="http://examplestore.enstore.com/template:hawaii/page/welcome">Hawaii</a> templates both have a welcome page that contains a header image. You can simply edit the image in Photoshop and add custom graphics like branding or images of featured products.</p>
+
+<p>If you know your way around HTML and CSS, you have the ability to include cool additions such as headers, ads or maybe even videos. You could even go further and create your own template from scratch.</p>
+
+<div class="align_image_left">
+	<a target="_blank" href="http://examplestore.enstore.com/template:hawaii/page/welcome"><img src="../../media/img/blog/template_design/customization_2.png" width="440" height="576" alt=""></a>
+	<small>The homepages of Enstore's newest templates: <a target="_blank" href="http://examplestore.enstore.com/template:hawaii/page/welcome">Hawaii</a> and <a target="_blank" href="http://examplestore.enstore.com/template:asphalt/page/welcome">Asphalt</a> </small>
+</div>
+
+<div class="align_image_right">
+	<a target="_blank" href="http://examplestore.enstore.com/template:asphalt/page/welcome"><img src="../../media/img/blog/template_design/customization_1.png" width="440" height="576" alt=""></a>
+</div>
+
+<h2>Menus</h2>
+<p>When you are designing your layout, it's important that you use the space wisely. The product menu is one of the main elements that influences your layout. To know how much space your product menu is going to take, you should first take a look at the number of categories you are going to have.</p>
+
+<p>In a horizontal menu with a fixed width, it's sometimes difficult to get all your menu items onto a single line. In which case, you have the option to decrease the font size, or continue the menu on the next line. In templates like <a target="_blank" href="http://examplestore.enstore.com/template:bishop/browse/1">Bishop</a> and <a target="_blank" href="http://examplestore.enstore.com/template:mocca/browse/1">Mocca</a> both the top and submenu items are shown side-by-side. This is one way to use a horizontal menu, but it's probably not best to use it for a store with many menu items.</p>
+
+<p>To keep a menu with lots of items free of clutter, we advise that you use a vertical menu. This makes use of the vertical space and makes it easy to scroll. More often than not, you should put such long menus on the left. Most users are accustomed to reading from left to right and therefore often start at the left side of a page.</p>
+<div class="align_image_right">
+	<img src="../../media/img/blog/template_design/menus.png" width="440" height="187" alt="">
+	<small>On the left the menu of <a target="_blank" href="http://examplestore.enstore.com/template:bishop/browse/1">Bishop</a>, on the right the menu of <a target="_blank" href="http://examplestore.enstore.com/template:marley/browse/1">Marley</a>.</small>
+</div>
+
+<h2>Cart</h2>
+<p>To make purchasing products as pleasant as possible, it's important that you prevent every possible source of frustration for the customer. Searching for the cart can be a prime source of frustration. Therefore, it's important that the cart is always placed in an obvious location. On many of our templates you'll see that the cart is located at the top of the sidebar. The <a target="_blank" href="http://examplestore.enstore.com/template:bishop/browse/1">Bishop</a> and <a target="_blank" href="http://examplestore.enstore.com/template:mocca/browse/1">Mocca</a> templates don't have a sidebar, so we chose to give them a horizontal cart beneath the menu.</p>
+
+<div class="align_full_width" style="margin-bottom:25px;">
+	<img src="../../media/img/blog/template_design/horizontal_carts.png" width="930" height="174" alt="">
+	<small>The horizontal cart of <a target="_blank" href="http://examplestore.enstore.com/template:mocca/browse/1">Mocca</a>. On top the collapsed view and at the bottom the edit view.</small>
+</div>
+
+<p>Besides the location of the cart, it's also important that it has a neat and clean appearance. Products with long names often don't fit in a sidebar with a fixed width. For the <a target="_blank" href="http://examplestore.enstore.com/template:bishop/browse/1">Bishop</a> and <a target="_blank" href="http://examplestore.enstore.com/template:mocca/browse/1">Mocca</a> templates we list the products horizontally and if there's too many, we use more lines. This allowed us to use larger fonts and add detailed information. You could also create a nice placeholder when the cart is empty. For inspiration, both <a target="_blank" href="http://examplestore.enstore.com/template:hawaii/browse/1">Hawaii</a> and <a target="_blank" href="http://examplestore.enstore.com/template:asphalt/browse/1">Asphalt</a> have placeholders.</p>
+
+
+
+<h2>Buttons</h2>
+<div class="align_image_left">
+	<img src="../../media/img/blog/template_design/cart.png" width="440" height="535" alt="">
+	<small>Elements with different shapes or colors scream for attention.</small>
+</div>
+
+<p>To successfully sell products, customers must know where to click and where they can pay. So when you have these important actions you need to draw attention to them.</p>
+
+<p>It's better to create 'checkout' and 'buy' buttons that stand out from the rest. We also advocate that you give them a specific color that helps to stand out. The shape of a button can also make a difference. For example, the 'buy' button on the <a target="_blank" href="http://examplestore.enstore.com/template:asphalt/browse/1">Asphalt</a> template is the only element with a triangular shape. 
+To draw attention to important buttons it is wise to minimize the number of unnecessary buttons on each page. Buttons also need to have a "down-state" so it's really obvious when they are clicked.</p>
+
+<h4>Providing feedback</h4>
+<p>We advise you to give the customer a response on important actions. By giving a response, you reassure the customer that what they expect has been carried out. For example, each time a user clicks on a "buy" button they need to know the product has been added without having to constantly check the cart. To properly inform the user, templates like <a target="_blank" href="http://examplestore.enstore.com/template:asphalt/browse/1">Asphalt</a> and <a target="_blank" href="http://examplestore.enstore.com/template:hawaii/browse/1">Hawaii</a> have a small notification popup that flashes whenever the cart is busy.</p>
+
+
+<h2>Different States</h2>
+<p>To let your store shine at all times, it's important that you look at all the different states your pages can be in.</p>
+
+<p>The information that comes with a product determines how to present it on a page. For example, if a product doesn't contain an image or a description, it creates an empty gap on your page. For this you could create a placeholder for the image, or create a layout that doesn't necessarily need images, like the <a target="_blank" href="http://examplestore.enstore.com/template:nihilists/browse/1">Nihilists</a> template.</p>
+
+<p>Products may also contain different variations. Variations are presented within a table that automatically appears when you look at a product in detail. When you design your template it is important that you don't forget this element, because it has no default styling.</p>
+
+<div class="align_image_right">
+	<img src="../../media/img/blog/template_design/variations.png" width="440" height="240" alt="">
+</div>
+
+
+
+<h2>Get the Most Out of Enstore</h2>
+<div class="align_image_left">
+	<a target="_blank" href="http://examplestore.enstore.com/template:tripwire/browse/1"><img src="../../media/img/blog/template_design/tripwire.png" width="440" height="576" alt=""></a>
+	<small>The interactive cart of <a target="_blank" href="http://examplestore.enstore.com/template:tripwire/browse/1">Tripwire</a> makes use of drag and drop.</small>
+</div>
+
+<p>You can also add features to enhance the shopping experience for your customers. With <a href="http://www.enstore.com">Enstore</a> you can make use of <a href="http://jquery.com/">jQuery</a>, a javascript library that makes it easy for you to add interesting features such as drag and drop. You can see an example on the <a href="http://examplestore.enstore.com/template:tripwire/browse/1">Tripwire</a> template, where you can drag products in to your cart.
+</p>
+<p>Please be careful while adding javascript effects and heavy imagery to your store. While these additions might seem cool in the beginning, they can be an easy annoyance for your customers. For example, having a 500px high illustration at the top of your store would have to make your customers scroll every time they land on a page. Making it hard for them to easily browse your products.</p>
+
+<div>
+	<h2>Tips to Keep in Mind</h2>
+	<ul class="list">
+		<li>You can change the style of an empty cart.</li>
+		<li>You need a page when searches return no results.</li>
+		<li>Pagination controls need styling.</li>
+		<li>Use the truncate filter for lines that get to long.</li>
+		<li>If you don't have a logo, use a substitute in the form of text.</li>
+		<li>You can add special design elements to your featured products.</li>
+	</ul>
+</div>
+
+<h2>Let us Know</h2>
+<p>If you have questions about designing templates or about templates in general, please visit <a href="http://support.enstore.com/discussions/enstore-designer-editing-templates">Enstore Support</a>.</p>
+
+<p>We are aways looking for interesting stores on <a href="http://www.enstore.com">Enstore</a> and we love hearing about them. If you've created a great store, designed your own template or when you have ideas for future templates, please let us know.</p>
+
+<h2>Where to Begin</h2>
+<p>If you are interested in starting a store, visit <a href="http://www.enstore.com">Enstore</a> and create a store for free.
+You can also find out more on how to design a template with Enstore Designer in the <a href="http://www.enstore.com/support/documentation/templates/designer">Enstore Documentation</a>.
+
+<div class="button">
+	<a href="http://www.enstore.com/support/documentation/templates/designer">Enstore Designer</a>
+</div>
+
+<div class="clear"></div>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Template Design</span> written by <a href="http://twitter.com/joyvincent" class="author">Joy-Vincent Niemantsverdriet</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/template-design/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/template-design/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/template-design/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

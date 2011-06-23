@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Crunchtime</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../versions-icon/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> The Versions Icon</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Wednesday the 26<sup>th</sup> <em>of</em> August, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">The Sleeping Barber </span><a href="../the-sleeping-barber/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Crunchtime&nbsp;</h2>
+				<h3 class="author"><em>by</em> Dirk Stoop</h3>
+				<p class="intro">We&#39;ve been keeping busy here at Sofa HQ. Checkout 3 is almost ready and Versions will get an update soon as well. This post is about some of the UI refinements we made in Checkout.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>We&#39;ve been keeping busy here at Sofa HQ. <a href="http://www.checkoutapp.com">Checkout 3</a> is almost ready and <a href="http://www.versionsapp.com">Versions</a> will get an update soon as well, although most of the credit for that goes to Jo&atilde;o. This post is about some of the UI refinements we made in Checkout.</p>
+
+<p>Jorn already lifted the tip of the veil in his post about Checkout&#39;s new <a href="../welcome-window/index.html">welcome window</a>. Naturally, that&#39;s only one of the more obvious changes in the new release. Checkout 3 will ship with a bunch of new features like product matrices (think sizes and colors for shirts), label printing and a great new way to set up a webstore. All things our customers have been asking for, and that we have been meaning to add to Checkout for a while.</p>
+
+<p>Today I won&#39;t talk about those big new features, we&#39;ll save that for when the app is released and you can take a closer look at them. Instead, I&#39;ll talk about some improvements that are a lot smaller in scope, but just as interesting to talk about from a design point of view.</p>
+
+<p>Whenever you make a visual design, you secretly hope it will stand the test of time, but as long as you keep getting better at what you do, you&#39;ll find something about it that you want to improve at some point. When I first looked at Checkout 1&#39;s interface after we shipped Checkout 2, this piece of work that we were all so very proud of suddenly felt surprisingly quaint. The same thing has started to happen to Checkout 2&#39;s interface during the many spit-and-polish cycles we&#39;ve applied to Checkout 3.</p>
+
+<p>Table headers are one of those things we have wanted to &lsquo;fix&rsquo; for a long time, but somehow never got around to earlier. By default, table views in Cocoa apps show a little separator on the right-hand side of every column header, even in the rightmost one when there&#39;s a scrollbar under it. It has always bugged me to no end that in this situation, that rightmost 1px gray line &ndash; which, by the way, is completely unneeded &ndash; is exactly one pixel off to the left compared to the scrollbar drawn below it.</p>
+
+<div class="align_image_left">
+	<img class="clean" src="../../media/img/blog/crunchtime/tableheaders.png" width="390" height="300" alt="Checkout&#39;s Tableheaders">
+	<small>Normal table headers at the top, courtesy of Mail.app, Checkout 3&#39;s table headers below.</small>
+</div>
+
+<p>Fixing this took more work than it should, it turned out to be pretty tricky to figure out exactly what state a header is in (normal, selected, depressed, showing an ascending or descending sort indicator) when you write your own drawing code from scratch. The upside was that once we did the groundwork to figure all of this out, we could fix everything that bugged us about regular table headers at once, like those blurry sorting arrows, and the awkward, glassy look that afaik. hasn&#39;t been updated since Mac OS X Public Beta.</p>
+
+<p>This kind of sounds like we knew what we were doing from the start, but it proved quite tricky to improve upon a standard Cocoa control that&#39;s used so much (Checkout has *a lot* of table views), without making it look out of place in the rest of the app or the larger environment. Lets just say that it took many iterations before we had something we were all happy with. Another illustration of how hard it is to replace common controls like these: We also tried to come up with a better look for the standard scrollbars in Checkout, but failed to find something that didn&#39;t feel &lsquo;un-Mac-like&rsquo;. Basically, everything we came up with worked less well than the standard scrollbars, because they just didn&#39;t feel as &lsquo;scrolly&rsquo;.</p>
+
+<p>Besides visual improvements like the one described above and workflow improvements that are above and beyond the amount of time I&#39;ve given myself to write this post, we&#39;re also introducing some pretty interesting new UI concepts in Checkout.</p>
+
+<p>Two big recurring themes in the interaction with Checkout are: Search is really really important, and people are going to be using barcode scanners with the app. Most barcode scanners emulate keyboards, so when you scan a barcode with them, a stream of characters is put wherever your keyboard focus tends to be. If your keyboard focus happens to be in a spot that doesn&#39;t allow input, that stream of characters translates into a stream of beeps. In other words, not very useful, unless you select the right spot to scan into first. This lack of being smart about where the barcode should go often results in the following scenario:</p>
+
+<div class="list">
+	<ul>
+		<li>Scan barcode</li>
+		<li>Hear beeps</li>
+		<li>Put the barcode scanner down</li>
+		<li>Grab the mouse</li>
+		<li>Aim and click in the right spot</li>
+		<li>Pick up the barcode scanner</li>
+		<li>Try again</li>
+	</ul>
+</div>
+
+<p>That sounds completely unnecessary, doesn&#39;t it? Sadly, it&#39;s kind of tricky to discern between characters coming from a barcode scanner and a real keyboard, especially after Leopard introduced a new security measure that made it impossible to completely intercept and redirect all events coming from a particular keyboard (or for that matter, a barcode scanner). Understandable measure, but it meant a bunch of extra work for us.</p>
+
+<p>If you develop Mac software, you are probably familiar with the concepts &ldquo;first responder&rdquo; and &ldquo;responder chain&rdquo;. In short, the first responder is the object in your app that will get the first shot at trying to handle an event (e.g. a keyboard event) that is sent through the app, the responder chain in turn is used to find the first object in the whole app that is able to handle any particular event if that first one can&#39;t deal with it. Checkout 3 now has a special &lsquo;first barcode responder&rsquo; and every object that supports being the first barcode responder has a little indicator that animates in when it gets that special status. Basically this indicator is a barcode cursor, which can move independently from the text insertion point cursor. A scanned-in barcode always goes to the object that is showing that cursor.</p>
+
+<p>Now, on to search, because the two are related as we&#39;ll see later. We wanted to offer people a way to refine their searches in Checkout, without adding unneeded clutter and complexity to the UI. All of Checkout&#39;s search fields are used for live, full-text, type-ahead search (or in other words, the way search works in iTunes, but not in the iTunes Store). In several places we&#39;ve added options to search only for matches on a particular type of data, e.g. searching for products by brand or customers by address, instead of searching for matches on any type of data related to a product or customer.</p>
+
+<p>We started with looking at how other apps solve this problem and the biggest issue we saw with just about every solution is that they were all a tad too minimalist for our tastes. The best solution we spotted is showing a little icon in a pop-down control to the left of the search field. The icon visualizes what criterium you&#39;re searching on, clicking the icon reveals a menu that lets you pick another. While I like the idea of using a pop-down menu here, it seems dangerous to assume someone will remember what that little icon stands for when they don&#39;t get the search results they expect. Using icons without labels is always tricky. And in this particular case, an icon sitting next to a search field to me doesn&#39;t say: &ldquo;Hey, we&#39;re only giving you matches for this particular type of data now.&rdquo;. It doesn&#39;t explain enough and is too easy to glance over.</p>
+
+<p>There&#39;s also a little bit of extra room next to the searchfields in Checkout. Thanks to that luxury, we could run with a more obvious design. So without further ado, let me present to you: our completely tricked-out search field.</p>
+
+<div class="align_image_left">
+	<img src="../../media/img/blog/crunchtime/searchfields.png" width="415" height="330" alt="Checkout&#39;s Searchfields">
+	<small>Checkout 3&#39;s tricked-out search field.</small>
+</div>
+
+<p>The search field in these screenshots is dressed up with both the &lsquo;barcode cursor&rsquo; (which lights up briefly when a barcode is received) and our new search criteria chooser. If you look closely you&#39;ll see that we also had to redesign the border around the search field &ndash; most visibly at the bottom line with its single pixel white drop-shadow &ndash; to make this heavily accessorized version look good.</p>
+
+<p>These are just a couple of my favorite new things in Checkout 3, and I could talk a lot longer about them than I just did, so I&#39;m stopping myself here. We&#39;re getting very close to the release, so it really is crunchtime. Be sure to download the Checkout 3 demo when it&#39;s out (we&#39;re aiming for mid-September) to discover all the little new things we&#39;ve made in it. We would love to hear what you think.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Crunchtime</span> written by <a href="http://twitter.com/dirkstoop" class="author">Dirk Stoop</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/crunchtime/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/crunchtime/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/crunchtime/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

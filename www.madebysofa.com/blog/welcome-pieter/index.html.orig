@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Welcome Pieter</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="http://www.madebysofa.com/media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://www.madebysofa.com/media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="http://www.madebysofa.com/media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="http://www.madebysofa.com/media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="http://www.madebysofa.com/media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="http://www.madebysofa.com/media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="/">www.madebysofa.com</a>
+				<a class="blog" href="/blog">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../blog/haiti-donation"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Haiti Donation</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Monday the 22<sup>nd</sup> <em>of</em> February, 2010
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Big Enstore Update </span><a href="../blog/enstore-update">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Welcome Pieter&nbsp;</h2>
+				<h3 class="author"><em>by</em> Jorn van Dijk</h3>
+				<p class="intro">Pieter de Bie is our new fulltime developer. He is going to focus on Versions. Time to introduce him properly.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<h4>Welcome at Sofa!</h4>
+
+<p><strong style="margin-right:6px;">Q </strong>Let's get the basics out of the way. Who are you and what makes you tick?<br><strong style="margin-right:7px;">A </strong>Hi, I'm Pieter, 24 years old and work at Sofa ;). I recently finished my Master's degree in Artificial Intelligence at the University of Groningen and just moved to Haarlem. I wrote a thesis on how computers can help in understanding how humans have acquired speech, which you can find <a href="http://scripties.fwn.eldoc.ub.rug.nl/scripties/Kunstmatigeintellige/Master/2009/Bie.P.de./?pFullItemRecord=ON">here</a>. It touches two subjects I find interesting: computer agents and language evolution.</p>
+
+<div class="align_image_left">
+	<img src="http://www.madebysofa.com/media/img/blog/welcome_pieter/pieter.jpg" width="200" height="200" alt="An image of Pieter de Bie.">
+	<small>Feel free to ask Pieter any question.</small>
+	<div class="button">
+		<a href="http://www.formspring.me/pdebie">formspring.me/pdebie</a>	
+	</div>
+</div>
+
+<p><strong style="margin-right:6px;">Q </strong>Where and when did you start programming?<br><strong style="margin-right:7px;">A </strong>When I was 8 or so I created a program for our school's computers that allowed kids to test their maths skills. In high school I created a website in Perl that allowed the school to enter which teacher were absent that day, so that I didn't have to go to school for nothing. I have mostly taught myself everything I wanted to know, though I did follow classes in Java, C++ and Prolog in university. Nowadays I do most of my stuff in Objective-C or Ruby.</p>
+
+<p><strong style="margin-right:6px;">Q </strong>What's the biggest project you've worked on so far?<br><strong style="margin-right:7px;">A </strong>My biggest project is <a href="http://gitx.frim.nl">GitX</a>, a graphical interface for the git version control system. I mostly created it for myself, as all the existing interfaces looked really ugly on OS X (they are written in Tcl/Tk). I learned most of my Cocoa skills (which I use now at Sofa) from building GitX.</p>
+
+<p><strong style="margin-right:6px;">Q </strong>What will you be doing at Sofa?<br><strong style="margin-right:7px;">A </strong>At first I'll be working on improving Versions, Sofa's interface for Subversion. Besides that I hope to pitch in with other projects, such as the secret Kaleidoscope project.</p>
+
+<p><strong style="margin-right:6px;">Q </strong>What programming projects do you find interesting?<br><strong style="margin-right:7px;">A </strong>I follow some projects closely, though I do not contribute to them myself, like <a href="http://code.google.com/p/redis/">Redis</a> and <a href="http://llvm.org">llvm</a>. Redis is a very fast key-value storage that is also simple to use and install. LLVM is gaining more attention lately; Python will be using it as a JIT and MacRuby uses LLVM to JIT your code or even compile your Ruby/Cocoa application. I also stay up to date with Git and Subversion releases. I hope the <a href="http://github.com/ccgus/letters">Letters.app</a> project will produce something nice.</p>
+
+<p><strong style="margin-right:6px;">Q </strong>What do you like to do next to programming?<br><strong style="margin-right:7px;">A </strong>Most of my hobbies are fairly nerd-oriented things. I like to play with <a href="http://openstreetmap.org">OpenStreetMap</a>, adding restaurants, parks and hidden walkways to the map. I also like to go <a href="http://geocaching.com">Geocaching</a>, which can often be done at the same time. Other than that I like to go running or cycling when it's not too cold. With bad weather I like to watch my girlfriend play games on the PS3. I'm not much of gamer myself, but am very good in commenting on other people's playing style. I read a lot of the stuff that shows up on <a href="http://news.ycombinator.com">Hacker News</a>.</p>
+
+<p><strong style="margin-right:6px;">Q </strong>How is your relation with Zowieso?<br><strong style="margin-right:7px;">A </strong>Unfortunately my girlfriend is allergic to cats, so I try to stay away from him as much as possible.</p>
+
+<p><strong style="margin-right:6px;">Q </strong>Anything else?<br><strong style="margin-right:7px;">A </strong>Nothing really. I'm excited about going to Cocoa conferences, which I've never been to before. I expect the people will be as nice as those at Sofa :).</p>
+
+<div class="button">
+	<a href="http://www.twitter.com/pdebie">twitter.com/pdebie</a>	
+</div>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Welcome Pieter</span> written by <a href="http://twitter.com/jornvandijk" class="author">Jorn van Dijk</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href=\"http://twitter.com/versionsapp/status/" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href=\"" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="http://www.madebysofa.com/media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>SOFA - Finding my Phone</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width = 1100">
+	
+	<!-- GOOGLE -->
+	<meta name="keywords" content="interface, icons, design, software, macintosh, mac, amsterdam, versions, checkout">
+	<meta name="description" content="Sofa is a software and interaction design company. We develop products and help others design theirs.">
+
+	<!-- CSS -->
+	<!-- TODO: It's better to merge these into one -->
+	<link rel="stylesheet" href="../../media/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../../media/css/post.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/madebysofa">
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+
+	<!-- Code Prettify -->
+	<script src="../../media/prettify/prettify.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../media/prettify/prettify.css" type="text/css">
+	
+	<!-- No text widows -->
+	<script src="../../media/js/jquery.widont.js" type="text/javascript"></script>
+	
+	<script src="../../media/js/retweet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			
+			// Change the links in the post navigation bar
+			$(".previous a").hover(
+				function() {$(".previous_title").fadeIn(100)},
+				function() {$(".previous_title").fadeOut(100)}
+			);
+
+			$(".next a").hover(
+				function() {$(".next_title").fadeIn(100)},
+				function() {$(".next_title").fadeOut(100)}
+			);
+			
+			// Replace the space between the last two words in every paragraph with a non breaking 
+			// space so we avoid having orphans: http://en.wikipedia.org/wiki/Widows_and_orphans
+			$(".post p, .post li, .post h1, .post h2").widont();
+			
+			// Make code look nice with syntax coloring
+			prettyPrint();
+		
+		});
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1807788-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.setAttribute('async', 'true');
+		document.documentElement.firstChild.appendChild(ga);
+	})();
+</script>
+
+	<!-- TYPEKIT -->	
+	<script type="text/javascript" src="http://use.typekit.com/gdn6pnx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-6.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="http://www.madebysofa.com/media/css/ie-7.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="logo" src="../../media/img/sofa_logo.gif" width="53" height="39" alt="Sofa Logo">
+			<h1>Sofa&#39;s blog about design, code <img class="ampersand" src="../../media/img/ampersand.gif" width="17" height="18" alt="Ampersand"> everything else.</h1>
+			<div class="links">
+				<a href="../../index.html">www.madebysofa.com</a>
+				<a class="blog" href="../../index.html">/blog</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="bar">
+			<p>
+				<span class="previous">
+					
+					<a href="../iconic/index.html"><span class="lucida">&laquo;</span> Previous</a> <span class="previous_title"> Iconic</span>
+					
+				</span>
+				
+				<span class="date">
+					
+					Monday the 11<sup>th</sup> <em>of</em> May, 2009
+					
+				</span>
+				
+				<span class="next">
+					
+					<span class="next_title">Ruby on OS X Talk </span><a href="../ruby-on-osx-slides/index.html">Next <span class="lucida"> &raquo;</span></a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="post">
+			<div class="left_col">
+				<h2 class="tk-league-gothic">Finding my Phone&nbsp;</h2>
+				<h3 class="author"><em>by</em> Dirk Stoop</h3>
+				<p class="intro">It seems obvious that you&#39;d want to find your cellphone when it rings. Still it took a while for any one manufacturer to make that easy enough.</p>
+				
+				
+			</div>
+			<div class="right_col">
+				<p>I bought my first cellphone in 1998. It was clunky, poor on features and virtually indestructible &ndash; trust me, I put that last one to the test. Its killer feature was letting me call and be called from anywhere, anytime. With every next phone I got, I added something to my list of requirements. First up was infrared connectivity, to get my laptop online from anywhere, first at a measly 9600 bps, later at a slightly more respectable 4KB per second. Next up was the ability to vibrate instead of ring. Soon after that, I found the mother of all my requirements: Being able to use my own audio samples as ringtones.</p>
+
+<p>Several years later, the introduction of the iPhone radically changed my requirements, but I&#39;ll get back to that in a bit.</p>
+
+<p>As soon as phone manufacturers started expanding their market beyond middle-aged businessmen, &lsquo;personalization&rsquo; features and, as a part of those, ringtone customization became more and more common. There is, however, more to a ringtone than personality. Designing a ringtone that is (a) easy to hear over some background noise &ndash; without needing playback at the loudest possible setting &ndash; and that (b) makes it easy to figure out where in the room you last put your phone, takes some extra effort. An effort that no phone manufacturers seemed to be taking.</p>
+
+<p>By those criteria, all ready-made ringtones kind of sucked back in 2001. I already had a hard enough time finding a ringtone with a small enough &lsquo;Hello Kitty factor&rsquo;; something that wouldn&#39;t make &ldquo;happy, happy, happy&rdquo; the prelude to every incoming call, regardless of my mood. But more importantly, I could not find a factory ringtone that did a decent job at helping me answer that most frustrating of questions: Where the hell did I put my phone?</p>
+
+<h2>How We Don&#39;t Hear Direction</h2>
+<p>There are many misconceptions about the way our sense of hearing works. How we pinpoint the location of a sound&#39;s source is one of its most commonly misunderstood aspects. The most intuitive &ndash; and incorrect &ndash; explanation is to assume that our brain figures it all out from the differences in how loud a sound is perceived by each ear. Louder at the right than at the left: clearly the source is located somewhere to our right. The truth is a bit more complicated, and way more interesting than that.</p>
+
+<p>Given the right sound, we can determine the direction it&#39;s coming from pretty accurately; we can determine direction way more specific than telling apart &ldquo;somewhere to the right&rdquo; from &ldquo;somewhere to the left&rdquo;. My crude little diagram below illustrates why a difference in loudness by itself would never get us very far. Or close.</p>
+
+<div class="align_image_left">
+	<img src="../../media/img/blog/finding_my_phone/diagram.gif" width="400" height="310" alt="A diagram showing two sound sources and their distance to the ears.">
+	<small>Two sound sources and their distance to the ears.</small>
+</div>
+
+<p>In the diagram we see a pair of ears facing the top of the diagram (Those two floppy shapes near the bottom &ndash; I promise, next time I&#39;ll ask one of my co-workers who *can* make spiffy-looking graphics to me help out). Points A and B are locations of sound sources. For simplicity&#39;s sake, both sound sources are omnidirectional and identical in every other way. I will also ignore that there will probably be a face somewhere between those ears which blocks part of the sound to the left ear, because that isn&#39;t relevant to point the example illustrates.</p>
+
+<p>As you can see from the list of distances, point A is almost twice as close to the right ear than to the left ear. Consequentially, sounds from point A are significantly louder in the right ear than in the left ear. So far, so good.</p>
+
+<p>Point B is further away, and while at the same angle, it is only around 17% closer to the right ear than it is to the left. That means that any sound from point B is still a bit louder to the right ear, but the difference is way smaller. Yet, with our eyes closed, we would still be able to hear that both points are located in the same direction.</p>
+
+<p>We could draw an entire curve across the diagram of all possible locations that have the same relative difference in distance between the left and right ears as point B. Sounds from anywhere along the curve would be perceived with the exact same difference in volume. The further away from us, the bigger the angle would be. Yet, if we were to close our eyes and listen to sounds from a couple of spots along the line, we&#39;d still be able to discern different directions.</p>
+
+<p>Volume differences only help when things are happening really nearby. Not too useful when you actually need to listen to find your phone.</p>
+
+<p>If you don&#39;t believe me yet, get a friend to talk at you from a bunch of different spots in the room while you sit there with your eyes closed. If you can consistently point in roughly the right direction, I&#39;m right. If you can&#39;t, I could be wrong, but you&#39;ll probably want to get your ears checked.
+</p>
+
+<h2>And How We Do</h2>
+<p>So it isn&#39;t only the difference in volume that lets us determine direction. But A and B do have one other characteristic in common beyond their angle; Sounds from both points have to travel about 47 pixels further to the left ear than to the right ear. They have the same absolute difference in distance. Now, I have no clue what the speed of sound in pixels per second is, so we&#39;ll have to translate to some real-world measure. The average distance between human ears is roughly 15 centimeters, using that measure 47 px translates to about 10 cm.</p>
+
+<p>Given the speed of sound through air (343 m/s at room temperature), sound takes 29 milliseconds to travel 10 cm. So sounds from either point hit the right ear 29 milliseconds before they hit the left ear, and that is how we hear direction.</p>
+
+<p>Next to these tiny timing differences, there are other things that help us perceive the direction of sound. In-ear microphones make for such awesomely vivid recordings because the distance between both mics is perfect&mdash;in other words, the timing is right&mdash;, but also because the auricles of whoever is wearing the mics filter and color the sound recorded by each microphone. Everyone&#39;s auricles are slightly different, so these recordings sound perfect to whomever recorded them, and merely extremely good to everyone else. The &lsquo;auricle effect&rsquo; is actually pretty significant, it is the only way we can tell a difference between sounds coming from in front us and behind us.</p>
+	
+<p>Some tiny animals, e.g. crickets, have some extra plumbing and nerves between their ears to detect direction, basically because their ears are too close together to give their brains a decent chance to process the even tinier timing differences. But for us, small ear-to-ear timing differences are the most important way to determine where a sound is coming from.</p>
+
+<p>Beyond reminding you of some high school physics&mdash;sorry about that&mdash;I do have a point to make. Not all sounds are perceived equally, which brings me back to the root cause that all ringtones suck. Or at least they used to. Ringtones tend to be simple and monophonic, they often consist solely of highly periodic elements. For our brains to figure out which ear is reached first, we need to hear when a sound begins. Better yet, we need sounds with a complex structure, so our brains can find plenty of little markers along the way to establish which ear is being reached first. Humming works better than the sound of a <a href="http://www.youtube.com/watch?v=pSzTPGlNa5U">Theremin</a>. Clapping works better than humming. And talking works better than clapping, because there&#39;s more time to listen, combined with plenty of little complexities that we can detect along the way.</p>
+
+<p>Finally, besides complexity and percussiveness, pitch is also important. Low-pitched sounds have longer waveforms, which means that a difference of say 29 ms for that 45&deg; angle is going to be less discernible to our brains for low-pitched sounds. This is why people actually buy 5.1 surround systems and don&#39;t massively return them; it doesn&#39;t affect the surround effect that all of the low-pitch sound comes from just one speaker.</p>
+
+<h2>Fixing the Ringtone</h2>
+<p>Most phone vendors have indirectly addressed the &lsquo;ringtone problem&rsquo; by jury-rigging their <a href="http://en.wikipedia.org/wiki/Ringtone#Types_of_ring_tones">monophonic FM tunes</a> with complete polyphonic orchestrations, adding several layers of complexity along the way. This alleviates the problem somewhat, but only if you don&#39;t mind having your personal pocket orchestra perform <a href="http://en.wikipedia.org/wiki/Nokia_tune">&ldquo;the Nokia tune&rdquo;</a> in A major whenever mom calls. Most phones that are sold today support using actual audio samples as ringtones, which helps if you&#39;re willing to hunt down a good one and upload it yourself.</p>
+
+<p>Now that we can customize, people who care about it can fix their ringtones themselves. Problem solved, right? Technically that is true, but that&#39;s not why I buy a new phone every year. Innovation in the field of programming languages also wasn&#39;t &lsquo;done&rsquo; when the first Turing complete system shipped. Or more concretely, when phone manufacturers added visual theming features to their phones, that didn&#39;t mean we no longer expected them to keep improving the look of their phone UIs.</p>
+
+<p>In the same line of thought, phone manufacturers need to let their sound designers create at least one really usable and useful ringtone to ship along with their phones. And push them to make it even better in every next iteration of the product. I have had the fortune to meet a handful of people who make their living as sound designers, some of them with large electronics companies, and one thing is extremely clear to me: Every single one of them knows a hell of a lot more about sound than I do.</p>
+
+<p>Like most things that feel Not Quite Right&trade; to me about lots of consumer electronics products, this is not a matter of incompetence, merely one of flawed priorities.</p>
+
+<h2>Enter iPhone</h2>
+<p>Boom. Flash-forward to the <a href="http://www.apple.com/quicktime/qtv/mwsf07/">Macworld 2007 Stevenote</a>, at 50 minutes and 45 seconds. I was already pretty psyched up that far into it, but it wasn&#39;t until I first heard &ldquo;Marimba&rdquo; that I was truly sold on the iPhone.</p>
+
+<p>Marimba is the perfect ringtone. It covers a wide range in pitch, which makes it less likely to be drowned in ambient noise. It is percussive and complex in nature, which makes it that much easier to locate your phone when it rings. And finally, something that immediately resonated with me on&mdash;I guess&mdash;a very deep, subconscious level, it isn&#39;t as painstakingly gleeful as the default tunes other manufacturers ship their phones with.</p>
+
+<p>The mere fact that Apple managed to get their default ringtone right on so many levels told me that their best and brightest had been working their asses off to create this device. And that they had used enough time and resources to do an insanely great job. Of course it&#39;s completely possible that I mistook happy coincidence for masterly attention to detail, but from that point on, I wanted to believe this truly was the next big thing.</p>
+
+<p>The only thing that remains between me and ringtone nirvana is to convince everyone else at the office to stop using My Ringtone. No success so far.</p>
+			</div>
+		</div>
+
+<div class="clear"></div>
+
+<div class="footer_bar">
+	
+	<p>You read <span>Finding my Phone</span> written by <a href="http://twitter.com/dirkstoop" class="author">Dirk Stoop</a>.</p>
+	<div class="links">
+		<a href="http://feeds.feedburner.com/madebysofa" style="margin-right:6px;">Feed</a>
+		<a class="retweet self" href="index.html">Tweet</a>
+	</div>
+</div>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			// Versions twitter message
+			$.getJSON("http://twitter.com/status/user_timeline/versionsapp.json?count=3&callback=?", function(data) {
+				$(".versions ul").html("");
+			
+				for (i=0;i<2;i++) {
+					$(".versions ul").append("<li><a href="http://www.madebysofa.com/blog/finding-my-phone/\&quot;http://twitter.com/versionsapp/status/&quot;" + data[i]['id'] + "\">" + data[i]['text'] + "</a> <span> (" + data[i]['created_at'].substring(4, 11) +  ")</span></li>")
+				}
+			})
+			
+			
+			
+			// Enstore tumbr news feed
+			$.getJSON("http://enstore.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".enstore ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".enstore ul").append("<li><a href="http://www.madebysofa.com/blog/finding-my-phone/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+			
+			// Checkout tumbr news feed
+			$.getJSON("http://checkoutapp.tumblr.com/api/read/json?callback=?",
+				function(data) {
+				
+					$(".checkout ul").html("");
+				
+					for (i=0;i<3;i++) {
+						$(".checkout ul").append("<li><a href="http://www.madebysofa.com/blog/finding-my-phone/\&quot;&quot;" + data.posts[i]['url-with-slug'] + "\">" + data.posts[i]['regular-title'] + "</a> <span> (" + data.posts[i]['date'].split(", ")[1].substring(0, 11) +  ")</span></li>")
+					}
+				});
+
+		
+		</script>
+
+		<div class="news versions">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/versions_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Versions <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://www.twitter.com/versionsapp">@versionsapp</a> on Twitter.</p>
+		</div>
+		<div class="news checkout">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/checkout_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Checkout <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/checkoutapp">@checkoutapp</a> on Twitter.</p>
+		</div>
+		<div class="news enstore">
+			<div class="wrap">
+				<img class="icon" src="../../media/img/blog/enstore_small.png" width="35" height="34" alt="Versions Icon">
+				<h4>Enstore <span>News</span></h4>
+			</div>
+			<ul><li>Loading...</li></ul>
+			<p>Follow <a href="http://twitter.com/enstore">@enstore</a> on Twitter.</p>
+		</div>
+
+		<div class="clear">&nbsp;</div>
+		
+		<div id="footer"><small>Copyright &copy; 2008&ndash;2011 madebysofa holding BV.</small></div>
+		
+	</div>
+	<!-- <script type="text/javascript" src="http://www.observerapp.com/record.js" async defer></script>
+<script type="text/javascript">
+try {
+	Observerapp.record("agtvYnNlcnZlcmFwcHINCxIEU2l0ZRjB4-QBDA");
+} catch (e) {
+	
+}
+</script> -->
+</body>
+</html>
